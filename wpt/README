@@ -1,0 +1,15 @@
+In order to run the script you need to edit it and ensure you have filled ouot the following:
+
+1.  Chosen the correct location - the default is Dulles using IE9 and DSL for the connection speed.
+2.  Ensure you've supplied an API Key for talking to WPT
+3.  If you are not using the Public WPT, then you'll need to change the API URL's.
+4.  Make sure you update the working directories to your install location.  This includes the location where the HAR file will be downloaded.
+	HAR_DIR
+	WORKING_DIR
+
+It is recommended that you install the HAR Viewer so that once you've generated a HAR file from WPT, you can then view it on your local.  For more information on the offline  HAR Viewer go to: http://code.google.com/p/harviewer/
+
+Executing the script:runWPTTest.sh <URL> <NumOfRuns>
+     <URL> is a required paramater
+     <NumOfRuns> is an option paramater
+

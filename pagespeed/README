@@ -1,0 +1,7 @@
+This contains experiments with the PageSpeed API.  
+
+Currently there is an HTML file in the "Views" section which has the ability to run for a specified URL (you'll need to edit the HTML to specify this).  However, in it's current state it's been modified to parse a specified pagespeed json file and display the results.  Ideally, this will be altered so that it can do either - parse a specified json file or run for a specified URL.
+
+Before running make sure that you edit the HTML and specify your API Key.
+
+I'm hoping to experiement more with this and convert it to a standalone JS file that could be executed by phantomJS to run pagespeed for a URL and API Key and return an HTML page of the results.

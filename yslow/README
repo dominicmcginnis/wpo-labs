@@ -1,0 +1,3 @@
+An experiment in using phantomJS with Yslow.js.   The script in the script directory will utilize phantomjs to execute yslow and then save the results in "human readable" html so it can be viewed in a browser. Before you can run the script, you'll need to edit it and ensure that all the PATHS are set correctly for you.
+
+ Note:  To insatll and get the yslow + phantomJS please go to: https://github.com/marcelduran/yslow/wiki/PhantomJS

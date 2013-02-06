@@ -1,0 +1,4302 @@
+{
+ "kind": "pagespeedonline#result",
+ "id": "http://www.stubhub.com/",
+ "responseCode": 200,
+ "title": "Tickets at StubHub! Where Fans Buy and Sell Tickets",
+ "score": 84,
+ "pageStats": {
+  "numberResources": 125,
+  "numberHosts": 31,
+  "totalRequestBytes": "24105",
+  "numberStaticResources": 80,
+  "htmlResponseBytes": "451425",
+  "cssResponseBytes": "168559",
+  "imageResponseBytes": "523557",
+  "javascriptResponseBytes": "2137444",
+  "otherResponseBytes": "7272",
+  "numberJsResources": 40,
+  "numberCssResources": 9
+ },
+ "formattedResults": {
+  "locale": "en_US",
+  "ruleResults": {
+   "AvoidBadRequests": {
+    "localizedRuleName": "Avoid bad requests",
+    "ruleScore": 100,
+    "ruleImpact": 0.0
+   },
+   "AvoidCharsetInMetaTag": {
+    "localizedRuleName": "Avoid a character set in the meta tag",
+    "ruleScore": 100,
+    "ruleImpact": 0.0
+   },
+   "AvoidCssImport": {
+    "localizedRuleName": "Avoid CSS @import",
+    "ruleScore": 100,
+    "ruleImpact": 0.0
+   },
+   "AvoidExcessSerialization": {
+    "localizedRuleName": "Reduce request serialization",
+    "ruleScore": 0,
+    "ruleImpact": 16.0,
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "The following requests are serialized. Try to break up the dependencies to make them load in parallel."
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://csi.gstatic.com/csi?v=3&s=gapi_global&action=global&it=blt.0,psi.0&e=abc_e69,abc_e100,abc_e71,abc_e98,abc_e96,abc_e79,abc_e74,abc_e45,abc_e17,abc_e86,abc_e82,abc_e92,abc_e94,abc_e61,abc_e90,abc_e30,abc_l0,abc_m0,abc_e74l0,abc_e74m0&rt="
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.yggBrfffCmM.O/m=plusone/am=iQ/rt=j/d=1/rs=AItRSTNO2PNKB8cUND6tWqzsI8xazXDOJw/cb=gapi.loaded_0"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://apis.google.com/js/plusone.js"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/lt/social-content-3.4.js?_=1358548124187"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "[native code]"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "header": {
+       "format": "The following requests are serialized. Try to break up the dependencies to make them load in parallel."
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://csi.gstatic.com/csi?v=3&s=gapi_module&action=plusone&it=mli.0,mei.0&e=abc_e69,abc_e100,abc_e71,abc_e98,abc_e96,abc_e79,abc_e74,abc_e45,abc_e17,abc_e86,abc_e82,abc_e92,abc_e94,abc_e61,abc_e90,abc_e30,abc_l0,abc_m0,abc_pplusone,abc_e74l0,abc_e74m0,abc_e74pplusone&rt="
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.yggBrfffCmM.O/m=plusone/am=iQ/rt=j/d=1/rs=AItRSTNO2PNKB8cUND6tWqzsI8xazXDOJw/cb=gapi.loaded_0"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://apis.google.com/js/plusone.js"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/lt/social-content-3.4.js?_=1358548124187"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "[native code]"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "header": {
+       "format": "The following requests are serialized. Try to break up the dependencies to make them load in parallel."
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://ssl.gstatic.com/s2/oz/images/stars/po/Publisher/sprite4-a67f741843ffc4220554c34bd01bb0bb.png"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.yggBrfffCmM.O/m=plusone/am=iQ/rt=j/d=1/rs=AItRSTNO2PNKB8cUND6tWqzsI8xazXDOJw/cb=gapi.loaded_0"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://apis.google.com/js/plusone.js"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/lt/social-content-3.4.js?_=1358548124187"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "[native code]"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "header": {
+       "format": "The following requests are serialized. Try to break up the dependencies to make them load in parallel."
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.yggBrfffCmM.O/m=plusone/am=iQ/rt=j/d=1/rs=AItRSTNO2PNKB8cUND6tWqzsI8xazXDOJw/cb=gapi.loaded_0"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://apis.google.com/js/plusone.js"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/lt/social-content-3.4.js?_=1358548124187"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "[native code]"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "header": {
+       "format": "The following requests are serialized. Try to break up the dependencies to make them load in parallel."
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cdn.api.twitter.com/1/users/show.json?screen_name=StubHub&callback=twttr.setFollowersCount"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://platform.twitter.com/widgets/follow_button.1358286701.html"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "[native code]"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "header": {
+       "format": "The following requests are serialized. Try to break up the dependencies to make them load in parallel."
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://connect.facebook.net/en_US/all.js"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/lt/social-content-3.4.js?_=1358548124187"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "[native code]"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "header": {
+       "format": "The following requests are serialized. Try to break up the dependencies to make them load in parallel."
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://p.twitter.com/f.gif?_=1358548123187&id=twitter-widget-0&lang=en&screen_name=StubHub&show_count=false&show_screen_name=false&size=m&twttr_variant=2.0&twttr_referrer=http%3A%2F%2Fwww.stubhub.com%2F&twttr_widget=1&twttr_hask=0&twttr_li=0&twttr_pid="
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://platform.twitter.com/widgets/follow_button.1358286701.html"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "[native code]"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "header": {
+       "format": "The following requests are serialized. Try to break up the dependencies to make them load in parallel."
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://p.twitter.com/f.gif?_=1358548123187&id=twitter-widget-1&lang=en&screen_name=StubHub&show_count=false&show_screen_name=false&size=m&twttr_variant=2.0&twttr_referrer=http%3A%2F%2Fwww.stubhub.com%2F&twttr_widget=1&twttr_hask=0&twttr_li=0&twttr_pid="
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://platform.twitter.com/widgets/follow_button.1358286701.html"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "[native code]"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "header": {
+       "format": "The following requests are serialized. Try to break up the dependencies to make them load in parallel."
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://wa.stubhub.com/b/ss/stubhub/1/H.24.4/s11507163618225?AQB=1&ndh=1&t=18%2F0%2F2013%2014%3A28%3A44%205%20480&ns=stubhub&pageName=homepage&g=http%3A%2F%2Fwww.stubhub.com%2F&cc=USD&events=event47&v56=Rookie&pe=lnk_o&pev2=track%20HP-RR%20Impression&s=1024x768&c=24&j=1.6&v=N&k=Y&bw=1024&bh=768&AQE=1"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/lt/home-content-min-8.3.js?_=1358548124187"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "[native code]"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "header": {
+       "format": "The following requests are serialized. Try to break up the dependencies to make them load in parallel."
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://wa.stubhub.com/b/ss/stubhub/1/H.24.4/s19220006866380?AQB=1&ndh=1&t=18%2F0%2F2013%2014%3A28%3A44%205%20480&ns=stubhub&pageName=homepage&g=http%3A%2F%2Fwww.stubhub.com%2F&cc=USD&events=event47&c54=Unknown&pe=lnk_o&pev2=FB%20User%20Status&s=1024x768&c=24&j=1.6&v=N&k=Y&bw=1024&bh=768&AQE=1"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/lt/social-content-3.4.js?_=1358548124187"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "[native code]"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "header": {
+       "format": "The following requests are serialized. Try to break up the dependencies to make them load in parallel."
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://apis.google.com/js/plusone.js"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/lt/social-content-3.4.js?_=1358548124187"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "[native code]"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "header": {
+       "format": "The following requests are serialized. Try to break up the dependencies to make them load in parallel."
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://idcs.interclick.com/Segment.aspx?sid=4342ddd6-570c-4a71-a67b-bae9fec0b815"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://view.atdmt.com/jaction/sf1stu_UniversalAllPages_4?_=1358548124187"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "[native code]"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "header": {
+       "format": "The following requests are serialized. Try to break up the dependencies to make them load in parallel."
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://r.turn.com/r/beacon?b2=7owvfnluczQ1A1TNlIhTO6iak27U6TVmI9klE0u2UwJEZahofymP9g8ge_vo7AatpYbs16gQ79oxWSdmrsCmFw&cid="
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://view.atdmt.com/jaction/sf1stu_UniversalAllPages_4?_=1358548124187"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "[native code]"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "header": {
+       "format": "The following requests are serialized. Try to break up the dependencies to make them load in parallel."
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://r.twimg.com/jot?l=%7B%22_category_%22%3A%22tfw_client_event%22%2C%22language%22%3A%22en%22%2C%22client_version%22%3A%222.0%3Am%22%2C%22widget_origin%22%3A%22http%3A%2F%2Fwww.stubhub.com%2F%22%2C%22format_version%22%3A1%2C%22dnt%22%3Afalse%2C%22triggered_on%22%3A1358548123187%2C%22event_namespace%22%3A%7B%22client%22%3A%22tfw%22%2C%22page%22%3A%22button%22%2C%22section%22%3A%22follow%22%2C%22action%22%3A%22impression%22%7D%7D"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://platform.twitter.com/widgets/follow_button.1358286701.html"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "[native code]"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "header": {
+       "format": "The following requests are serialized. Try to break up the dependencies to make them load in parallel."
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://s.tribalfusion.com/i.cid?c=476933&d=30&page=landingPage"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://view.atdmt.com/jaction/sf1stu_UniversalAllPages_4?_=1358548124187"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "[native code]"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "header": {
+       "format": "The following requests are serialized. Try to break up the dependencies to make them load in parallel."
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://switch.atdmt.com/action"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://view.atdmt.com/jaction/sf1stu_UniversalAllPages_4?_=1358548124187"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "[native code]"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "AvoidLandingPageRedirects": {
+    "localizedRuleName": "Avoid landing page redirects",
+    "ruleScore": 100,
+    "ruleImpact": 0.0
+   },
+   "AvoidLongRunningScripts": {
+    "localizedRuleName": "Avoid long-running scripts",
+    "ruleScore": 100,
+    "ruleImpact": 0.0
+   },
+   "DeferParsingJavaScript": {
+    "localizedRuleName": "Defer parsing of JavaScript",
+    "ruleScore": 0,
+    "ruleImpact": 25.505740000000003,
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "$1 of JavaScript is parsed during initial page load. Defer parsing JavaScript to reduce blocking of page rendering.",
+       "args": [
+        {
+         "type": "BYTES",
+         "value": "2.4MiB"
+        }
+       ]
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.201111261850.min.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "304.3KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "206.5KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "206.5KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "206.5KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "206.5KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://connect.facebook.net/en_US/all.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "125.9KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/baynote/baynote-single.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "92.5KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://s.stubhubstatic.com/resources/mojito/js/lib/TeaLeaf.bundle.201111261850.min.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "66.6KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://platform.twitter.com/widgets.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "60.6KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://static.ak.fbcdn.net/rsrc.php/v2/yc/r/B_QNvQ54fQG.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "59.6KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://static.ak.fbcdn.net/rsrc.php/v2/yc/r/B_QNvQ54fQG.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "59.6KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://static.ak.fbcdn.net/rsrc.php/v2/yc/r/B_QNvQ54fQG.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "59.6KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://static.ak.fbcdn.net/rsrc.php/v2/yc/r/B_QNvQ54fQG.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "59.6KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/resources/mojito/js/common/stubhub-rb1215.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "53.2KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "50.9KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "50.9KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "50.9KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "50.9KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/foresee_v2/foresee-trigger.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "50.8KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "46.4KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "46.4KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "46.4KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "46.4KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2 of inline JavaScript)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://platform.twitter.com/widgets/follow_button.1358286701.html"
+          },
+          {
+           "type": "BYTES",
+           "value": "34.4KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/content/common.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "29.5KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2 of inline JavaScript)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://static.ak.facebook.com/connect/xd_arbiter.php?version=18"
+          },
+          {
+           "type": "BYTES",
+           "value": "20.5KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2 of inline JavaScript)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://s-static.ak.facebook.com/connect/xd_arbiter.php?version=18"
+          },
+          {
+           "type": "BYTES",
+           "value": "20.5KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/test/mbox.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "19.8KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.min.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "18.2KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://static.ak.fbcdn.net/rsrc.php/v2/ys/r/DDaddQc-NUy.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "15.5KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://static.ak.fbcdn.net/rsrc.php/v2/ys/r/DDaddQc-NUy.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "15.5KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://static.ak.fbcdn.net/rsrc.php/v2/ys/r/DDaddQc-NUy.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "15.5KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://static.ak.fbcdn.net/rsrc.php/v2/ys/r/DDaddQc-NUy.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "15.5KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/resources/js/third_party/jquery.autocomplete-rb1121.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "12.5KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/test/s_code_common.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "12.2KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/resources/mojito/js/pattern/phoenix-rb1218.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "9.5KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2 of inline JavaScript)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.stubhub.com/"
+          },
+          {
+           "type": "BYTES",
+           "value": "8.4KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/lt/content-1.1.min.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "8.3KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2 of inline JavaScript)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.facebook.com/plugins/like.php?api_key=&locale=en_US&sdk=joey&ref=footer&channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D18%23cb%3Df30e0aad78%26origin%3Dhttp%253A%252F%252Fwww.stubhub.com%252Ff361fab8b8%26domain%3Dwww.stubhub.com%26relation%3Dparent.parent&href=http%3A%2F%2Fwww.facebook.com%2Fstubhub&node_type=link&width=90&font=arial&layout=button_count&colorscheme=light&action=like&show_faces=false&extended_social_context=false"
+          },
+          {
+           "type": "BYTES",
+           "value": "3KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2 of inline JavaScript)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.facebook.com/plugins/like.php?api_key=&locale=en_US&sdk=joey&ref=footer&channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D18%23cb%3Df2400571a8%26origin%3Dhttp%253A%252F%252Fwww.stubhub.com%252Ff361fab8b8%26domain%3Dwww.stubhub.com%26relation%3Dparent.parent&href=http%3A%2F%2Fwww.facebook.com%2Fstubhub&node_type=link&width=90&font=arial&layout=button_count&colorscheme=light&action=like&show_faces=false&extended_social_context=false"
+          },
+          {
+           "type": "BYTES",
+           "value": "3KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2 of inline JavaScript)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.facebook.com/plugins/like.php?api_key=109259765770403&locale=en_US&sdk=joey&ref=footer&channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D18%23cb%3Dfa878191c%26origin%3Dhttp%253A%252F%252Fwww.stubhub.com%252Ff361fab8b8%26domain%3Dwww.stubhub.com%26relation%3Dparent.parent&href=http%3A%2F%2Fwww.facebook.com%2Fstubhub&node_type=link&width=90&font=arial&layout=button_count&colorscheme=light&action=like&show_faces=false&extended_social_context=false"
+          },
+          {
+           "type": "BYTES",
+           "value": "3KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2 of inline JavaScript)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.facebook.com/plugins/like.php?api_key=109259765770403&locale=en_US&sdk=joey&ref=footer&channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D18%23cb%3Df171422d1%26origin%3Dhttp%253A%252F%252Fwww.stubhub.com%252Ff361fab8b8%26domain%3Dwww.stubhub.com%26relation%3Dparent.parent&href=http%3A%2F%2Fwww.facebook.com%2Fstubhub&node_type=link&width=90&font=arial&layout=button_count&colorscheme=light&action=like&show_faces=false&extended_social_context=false"
+          },
+          {
+           "type": "BYTES",
+           "value": "3KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2 of inline JavaScript)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.facebook.com/plugins/recommendations.php?border_color=%23ffffff&header=false&site=www.stubhub.com&font=trebuchet%20ms&width=460&height=230&ref=HP_activity&app_id=&locale=en_US&sdk=joey&channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D18%23cb%3Df164d218c%26origin%3Dhttp%253A%252F%252Fwww.stubhub.com%252Ff361fab8b8%26domain%3Dwww.stubhub.com%26relation%3Dparent.parent"
+          },
+          {
+           "type": "BYTES",
+           "value": "2.5KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2 of inline JavaScript)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.facebook.com/plugins/recommendations.php?border_color=%23ffffff&header=false&site=www.stubhub.com&font=trebuchet%20ms&width=460&height=230&ref=HP_activity&app_id=&locale=en_US&sdk=joey&channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D18%23cb%3Dff9b4c58%26origin%3Dhttp%253A%252F%252Fwww.stubhub.com%252Ff361fab8b8%26domain%3Dwww.stubhub.com%26relation%3Dparent.parent"
+          },
+          {
+           "type": "BYTES",
+           "value": "2.5KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2 of inline JavaScript)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.facebook.com/plugins/recommendations.php?border_color=%23ffffff&header=false&site=www.stubhub.com&font=trebuchet%20ms&width=460&height=230&ref=HP_activity&app_id=109259765770403&locale=en_US&sdk=joey&channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D18%23cb%3Df382767ba4%26origin%3Dhttp%253A%252F%252Fwww.stubhub.com%252Ff361fab8b8%26domain%3Dwww.stubhub.com%26relation%3Dparent.parent"
+          },
+          {
+           "type": "BYTES",
+           "value": "2.5KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2 of inline JavaScript)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.facebook.com/plugins/recommendations.php?border_color=%23ffffff&header=false&site=www.stubhub.com&font=trebuchet%20ms&width=460&height=230&ref=HP_activity&app_id=109259765770403&locale=en_US&sdk=joey&channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D18%23cb%3Dfc50052d4%26origin%3Dhttp%253A%252F%252Fwww.stubhub.com%252Ff361fab8b8%26domain%3Dwww.stubhub.com%26relation%3Dparent.parent"
+          },
+          {
+           "type": "BYTES",
+           "value": "2.5KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/resources/mojito/js/feature/home-rb1209.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "1.6KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/lt/bubble.min-1.0.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "1.5KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/billboards/bb.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "1.2KiB"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/lt/omniSearch_02.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "947B"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/lt/getCookie-2.1.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "330B"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "EliminateUnnecessaryReflows": {
+    "localizedRuleName": "Eliminate unnecessary reflows",
+    "ruleScore": 0,
+    "ruleImpact": 0.027000000000000003,
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "JavaScript that executed in the following resources caused unnecessary reflows. To reduce page render time, modify the JavaScript so it does not cause a reflow:"
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1 ($2 reflows)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js"
+          },
+          {
+           "type": "INT_LITERAL",
+           "value": "8"
+          }
+         ]
+        },
+        "details": [
+         {
+          "format": "The following JavaScript call stack caused a reflow that took $1 milliseconds: $2",
+          "args": [
+           {
+            "type": "INT_LITERAL",
+            "value": "4"
+           },
+           {
+            "type": "VERBATIM_STRING",
+            "value": " getElementDimensions @ http://static.ak.fbcdn.net/rsrc.php/v2/yc/r/B_QNvQ54fQG.js:37:0\n getElementDimensions @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:18:0\n       testForDisplay @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n  delayUntilDisplayed @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n  ConnectSocialWidget @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                    u @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\n                    o @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\nRecommendationsWidget @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                      @ http://www.facebook.com/plugins/recommendations.php?border_color=%23ffffff&:432:0\n                    t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                    m @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:38:0\n                    n @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:38:0\n                    k @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:38:0\n                    t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n     _updateCallbacks @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                      @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                    t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                    z @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                      @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:49:0\n                    t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n     _updateCallbacks @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                      @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                    t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                    z @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                    s @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:49:0\n                      @ [native code]:0:0"
+           }
+          ]
+         },
+         {
+          "format": "The following JavaScript call stack caused a reflow that took $1 milliseconds: $2",
+          "args": [
+           {
+            "type": "INT_LITERAL",
+            "value": "1"
+           },
+           {
+            "type": "VERBATIM_STRING",
+            "value": " getElementDimensions @ http://static.ak.fbcdn.net/rsrc.php/v2/yc/r/B_QNvQ54fQG.js:37:0\n getElementDimensions @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:18:0\n       testForDisplay @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n  delayUntilDisplayed @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n  ConnectSocialWidget @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                    u @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\n                    o @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\nRecommendationsWidget @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                      @ http://www.facebook.com/plugins/recommendations.php?border_color=%23ffffff&:432:0\n                    t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                    m @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:38:0\n                    n @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:38:0\n                    k @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:38:0\n                    t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n     _updateCallbacks @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                      @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                    t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                    z @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                      @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:49:0\n                    t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n     _updateCallbacks @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                      @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                    t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                    z @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                    s @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:49:0\n                      @ [native code]:0:0"
+           }
+          ]
+         },
+         {
+          "format": "The following JavaScript call stack caused a reflow that took $1 milliseconds: $2",
+          "args": [
+           {
+            "type": "INT_LITERAL",
+            "value": "1"
+           },
+           {
+            "type": "VERBATIM_STRING",
+            "value": " getElementDimensions @ http://static.ak.fbcdn.net/rsrc.php/v2/yc/r/B_QNvQ54fQG.js:37:0\n getElementDimensions @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:18:0\n       testForDisplay @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n  delayUntilDisplayed @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n  ConnectSocialWidget @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                    u @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\n                    o @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\nRecommendationsWidget @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                      @ http://www.facebook.com/plugins/recommendations.php?border_color=%23ffffff&:432:0\n                    t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                    m @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:38:0\n                    n @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:38:0\n                    k @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:38:0\n                    t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n     _updateCallbacks @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                      @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                    t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                    z @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                      @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:49:0\n                    t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n     _updateCallbacks @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                      @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                    t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                    z @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                    s @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:49:0\n                      @ [native code]:0:0"
+           }
+          ]
+         },
+         {
+          "format": "The following JavaScript call stack caused a reflow that took $1 milliseconds: $2",
+          "args": [
+           {
+            "type": "INT_LITERAL",
+            "value": "1"
+           },
+           {
+            "type": "VERBATIM_STRING",
+            "value": " getElementDimensions @ http://static.ak.fbcdn.net/rsrc.php/v2/yc/r/B_QNvQ54fQG.js:37:0\n getElementDimensions @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:18:0\n       testForDisplay @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n  delayUntilDisplayed @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n  ConnectSocialWidget @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                    u @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\n                    o @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\nRecommendationsWidget @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                      @ http://www.facebook.com/plugins/recommendations.php?border_color=%23ffffff&:432:0\n                    t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                    m @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:38:0\n                    n @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:38:0\n                    k @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:38:0\n                    t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n     _updateCallbacks @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                      @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                    t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                    z @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                      @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:49:0\n                    t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n     _updateCallbacks @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                      @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                    t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                    z @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                    s @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:49:0\n                      @ [native code]:0:0"
+           }
+          ]
+         },
+         {
+          "format": "The following JavaScript call stack caused a reflow that took $1 milliseconds: $2",
+          "args": [
+           {
+            "type": "INT_LITERAL",
+            "value": "1"
+           },
+           {
+            "type": "VERBATIM_STRING",
+            "value": "  getElementDimensions @ http://static.ak.fbcdn.net/rsrc.php/v2/yc/r/B_QNvQ54fQG.js:37:0\n  getElementDimensions @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:18:0\nremoveOverflowElements @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                     u @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\nremoveOverflowElements @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                     u @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\n                       @ [native code]:0:0\n      initializeObject @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                     u @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\n      initializeObject @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                     u @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\n                       @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                       @ [native code]:0:0\n                       @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n               forEach @ [native code]:0:0\n        testForDisplay @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n   delayUntilDisplayed @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n   ConnectSocialWidget @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                     u @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\n                     o @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\n RecommendationsWidget @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                       @ http://www.facebook.com/plugins/recommendations.php?border_color=%23ffffff&:432:0\n                     t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                     m @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:38:0\n                     n @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:38:0\n                     k @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:38:0\n                     t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n      _updateCallbacks @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                       @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                     t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                     z @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                       @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:49:0\n                     t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n      _updateCallbacks @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                       @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                     t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                     z @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                     s @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:49:0\n                       @ [native code]:0:0"
+           }
+          ]
+         },
+         {
+          "format": "The following JavaScript call stack caused a reflow that took $1 milliseconds: $2",
+          "args": [
+           {
+            "type": "INT_LITERAL",
+            "value": "1"
+           },
+           {
+            "type": "VERBATIM_STRING",
+            "value": "  getElementDimensions @ http://static.ak.fbcdn.net/rsrc.php/v2/yc/r/B_QNvQ54fQG.js:37:0\n  getElementDimensions @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:18:0\nremoveOverflowElements @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                     u @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\nremoveOverflowElements @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                     u @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\n                       @ [native code]:0:0\n      initializeObject @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                     u @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\n      initializeObject @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                     u @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\n                       @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                       @ [native code]:0:0\n                       @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n               forEach @ [native code]:0:0\n        testForDisplay @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n   delayUntilDisplayed @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n   ConnectSocialWidget @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                     u @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\n                     o @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\n RecommendationsWidget @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                       @ http://www.facebook.com/plugins/recommendations.php?border_color=%23ffffff&:432:0\n                     t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                     m @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:38:0\n                     n @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:38:0\n                     k @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:38:0\n                     t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n      _updateCallbacks @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                       @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                     t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                     z @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                       @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:49:0\n                     t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n      _updateCallbacks @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                       @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                     t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                     z @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                     s @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:49:0\n                       @ [native code]:0:0"
+           }
+          ]
+         },
+         {
+          "format": "The following JavaScript call stack caused a reflow that took $1 milliseconds: $2",
+          "args": [
+           {
+            "type": "INT_LITERAL",
+            "value": "1"
+           },
+           {
+            "type": "VERBATIM_STRING",
+            "value": "  getElementDimensions @ http://static.ak.fbcdn.net/rsrc.php/v2/yc/r/B_QNvQ54fQG.js:37:0\n  getElementDimensions @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:18:0\nremoveOverflowElements @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                     u @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\nremoveOverflowElements @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                     u @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\n                       @ [native code]:0:0\n      initializeObject @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                     u @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\n      initializeObject @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                     u @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\n                       @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                       @ [native code]:0:0\n                       @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n               forEach @ [native code]:0:0\n        testForDisplay @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n   delayUntilDisplayed @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n   ConnectSocialWidget @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                     u @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\n                     o @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\n RecommendationsWidget @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                       @ http://www.facebook.com/plugins/recommendations.php?border_color=%23ffffff&:432:0\n                     t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                     m @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:38:0\n                     n @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:38:0\n                     k @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:38:0\n                     t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n      _updateCallbacks @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                       @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                     t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                     z @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                       @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:49:0\n                     t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n      _updateCallbacks @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                       @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                     t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                     z @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                     s @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:49:0\n                       @ [native code]:0:0"
+           }
+          ]
+         },
+         {
+          "format": "The following JavaScript call stack caused a reflow that took $1 milliseconds: $2",
+          "args": [
+           {
+            "type": "INT_LITERAL",
+            "value": "1"
+           },
+           {
+            "type": "VERBATIM_STRING",
+            "value": "  getElementDimensions @ http://static.ak.fbcdn.net/rsrc.php/v2/yc/r/B_QNvQ54fQG.js:37:0\n  getElementDimensions @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:18:0\nremoveOverflowElements @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                     u @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\nremoveOverflowElements @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                     u @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\n                       @ [native code]:0:0\n      initializeObject @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                     u @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\n      initializeObject @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                     u @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\n                       @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                       @ [native code]:0:0\n                       @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n               forEach @ [native code]:0:0\n        testForDisplay @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n   delayUntilDisplayed @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n   ConnectSocialWidget @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                     u @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\n                     o @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:61:0\n RecommendationsWidget @ http://static.ak.fbcdn.net/rsrc.php/v2/yV/r/xSaHPZUZylV.js:6:0\n                       @ http://www.facebook.com/plugins/recommendations.php?border_color=%23ffffff&:432:0\n                     t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                     m @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:38:0\n                     n @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:38:0\n                     k @ http://static.ak.fbcdn.net/rsrc.php/v2/yN/r/0NbmjKubqbX.js:38:0\n                     t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n      _updateCallbacks @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                       @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                     t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                     z @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                       @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:49:0\n                     t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n      _updateCallbacks @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                       @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:29:0\n                     t @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                     z @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:26:0\n                     s @ http://static.ak.fbcdn.net/rsrc.php/v2/yB/r/Vm1JnKckidu.js:49:0\n                       @ [native code]:0:0"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "result": {
+         "format": "$1 ($2 reflows)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.201111261850.min.js"
+          },
+          {
+           "type": "INT_LITERAL",
+           "value": "10"
+          }
+         ]
+        },
+        "details": [
+         {
+          "format": "The following JavaScript call stack (executed $1 times) caused reflows that took $2 milliseconds: $3",
+          "args": [
+           {
+            "type": "INT_LITERAL",
+            "value": "2"
+           },
+           {
+            "type": "INT_LITERAL",
+            "value": "2"
+           },
+           {
+            "type": "VERBATIM_STRING",
+            "value": "         css @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n             @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\nbuildOptions @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.:10:0\n             @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.:10:0\n        each @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n        each @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n       cycle @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.:10:0\n             @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/bb.js:24:0\n             @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n        each @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n       ready @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n             @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n             @ [native code]:0:0"
+           }
+          ]
+         },
+         {
+          "format": "The following JavaScript call stack (executed $1 times) caused reflows that took $2 milliseconds: $3",
+          "args": [
+           {
+            "type": "INT_LITERAL",
+            "value": "2"
+           },
+           {
+            "type": "INT_LITERAL",
+            "value": "2"
+           },
+           {
+            "type": "VERBATIM_STRING",
+            "value": "           K @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n        swap @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n         css @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n             @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\nbuildOptions @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.:10:0\n             @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.:10:0\n        each @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n        each @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n       cycle @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.:10:0\n             @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/bb.js:24:0\n             @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n        each @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n       ready @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n             @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n             @ [native code]:0:0"
+           }
+          ]
+         },
+         {
+          "format": "The following JavaScript call stack (executed $1 times) caused reflows that took $2 milliseconds: $3",
+          "args": [
+           {
+            "type": "INT_LITERAL",
+            "value": "2"
+           },
+           {
+            "type": "INT_LITERAL",
+            "value": "2"
+           },
+           {
+            "type": "VERBATIM_STRING",
+            "value": "         css @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n             @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n             @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.:10:0\n        each @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n        each @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\nbuildOptions @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.:10:0\n             @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.:10:0\n        each @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n        each @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n       cycle @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.:10:0\n             @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/bb.js:24:0\n             @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n        each @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n       ready @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n             @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n             @ [native code]:0:0"
+           }
+          ]
+         },
+         {
+          "format": "The following JavaScript call stack (executed $1 times) caused reflows that took $2 milliseconds: $3",
+          "args": [
+           {
+            "type": "INT_LITERAL",
+            "value": "2"
+           },
+           {
+            "type": "INT_LITERAL",
+            "value": "2"
+           },
+           {
+            "type": "VERBATIM_STRING",
+            "value": "           K @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n        swap @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n         css @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n             @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n             @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.:10:0\n        each @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n        each @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\nbuildOptions @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.:10:0\n             @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.:10:0\n        each @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n        each @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n       cycle @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.:10:0\n             @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/bb.js:24:0\n             @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n        each @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n       ready @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n             @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n             @ [native code]:0:0"
+           }
+          ]
+         },
+         {
+          "format": "The following JavaScript call stack caused a reflow that took $1 milliseconds: $2",
+          "args": [
+           {
+            "type": "INT_LITERAL",
+            "value": "1"
+           },
+           {
+            "type": "VERBATIM_STRING",
+            "value": "getPropertyValue @ [native code]:0:0\n          curCSS @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n            attr @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n                 @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:54:0\n             css @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n    buildOptions @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.:10:0\n                 @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.:10:0\n            each @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n            each @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n           cycle @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.:10:0\n                 @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/bb.js:24:0\n                 @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n            each @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n           ready @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n                 @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n                 @ [native code]:0:0"
+           }
+          ]
+         },
+         {
+          "format": "The following JavaScript call stack caused a reflow that took $1 milliseconds: $2",
+          "args": [
+           {
+            "type": "INT_LITERAL",
+            "value": "1"
+           },
+           {
+            "type": "VERBATIM_STRING",
+            "value": "getPropertyValue @ [native code]:0:0\n          curCSS @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n            attr @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n                 @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:54:0\n             css @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n            show @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n            show @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n    buildOptions @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.:10:0\n                 @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.:10:0\n            each @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n            each @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n           cycle @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.:10:0\n                 @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/bb.js:24:0\n                 @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n            each @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n           ready @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n                 @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n                 @ [native code]:0:0"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "result": {
+         "format": "$1 ($2 reflows)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://platform.twitter.com/widgets.js"
+          },
+          {
+           "type": "INT_LITERAL",
+           "value": "1"
+          }
+         ]
+        },
+        "details": [
+         {
+          "format": "The following JavaScript call stack caused a reflow that took $1 milliseconds: $2",
+          "args": [
+           {
+            "type": "INT_LITERAL",
+            "value": "4"
+           },
+           {
+            "type": "VERBATIM_STRING",
+            "value": "           @ http://platform.twitter.com/widgets.js:37:0\n     width @ http://platform.twitter.com/widgets.js:40:0\ndimensions @ http://platform.twitter.com/widgets.js:7:0\n    render @ http://platform.twitter.com/widgets.js:40:0\n         n @ http://platform.twitter.com/widgets.js:7:0\n      load @ http://platform.twitter.com/widgets.js:41:0\n           @ http://platform.twitter.com/widgets.js:41:0\n      then @ http://platform.twitter.com/widgets.js:1:0\n         J @ http://platform.twitter.com/widgets.js:1:0\n           @ http://platform.twitter.com/widgets.js:41:0\n         k @ http://platform.twitter.com/widgets.js:5:0\n         e @ http://platform.twitter.com/widgets.js:5:0\n           @ [native code]:0:0"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "result": {
+         "format": "$1 ($2 reflows)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://connect.facebook.net/en_US/all.js"
+          },
+          {
+           "type": "INT_LITERAL",
+           "value": "3"
+          }
+         ]
+        },
+        "details": [
+         {
+          "format": "The following JavaScript call stack (executed $1 times) caused reflows that took $2 milliseconds: $3",
+          "args": [
+           {
+            "type": "INT_LITERAL",
+            "value": "3"
+           },
+           {
+            "type": "INT_LITERAL",
+            "value": "3"
+           },
+           {
+            "type": "VERBATIM_STRING",
+            "value": "               t @ https://connect.facebook.net/en_US/all.js:73:0\nsetupAndValidate @ https://connect.facebook.net/en_US/all.js:138:0\n         process @ https://connect.facebook.net/en_US/all.js:129:0\n              qa @ https://connect.facebook.net/en_US/all.js:123:0\n                 @ https://connect.facebook.net/en_US/all.js:123:0\n         forEach @ [native code]:0:0\n               w @ https://connect.facebook.net/en_US/all.js:28:0\n              aa @ https://connect.facebook.net/en_US/all.js:123:0\n           parse @ https://connect.facebook.net/en_US/all.js:123:0\n               j @ https://connect.facebook.net/en_US/all.js:57:0\n               j @ [native code]:0:0\n                 @ https://connect.facebook.net/en_US/all.js:46:0\n                 @ [native code]:0:0"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "result": {
+         "format": "$1 ($2 reflows)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.min.js"
+          },
+          {
+           "type": "INT_LITERAL",
+           "value": "1"
+          }
+         ]
+        },
+        "details": [
+         {
+          "format": "The following JavaScript call stack caused a reflow that took $1 milliseconds: $2",
+          "args": [
+           {
+            "type": "INT_LITERAL",
+            "value": "1"
+           },
+           {
+            "type": "VERBATIM_STRING",
+            "value": "     hidden @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n     PSEUDO @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n     filter @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n          H @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n          H @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n    matches @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\nmultiFilter @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n         is @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n            @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n            @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n       each @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n       each @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n      queue @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n    animate @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n     custom @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.:10:0\n         go @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.:10:0\n            @ http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.:10:0\n            @ [native code]:0:0"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "result": {
+         "format": "$1 ($2 reflows)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/lt/home-content-min-8.3.js?_=1358548124187"
+          },
+          {
+           "type": "INT_LITERAL",
+           "value": "1"
+          }
+         ]
+        },
+        "details": [
+         {
+          "format": "The following JavaScript call stack caused a reflow that took $1 milliseconds: $2",
+          "args": [
+           {
+            "type": "INT_LITERAL",
+            "value": "1"
+           },
+           {
+            "type": "VERBATIM_STRING",
+            "value": "getPropertyValue @ [native code]:0:0\n          curCSS @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n             css @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n            show @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n            show @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n                 @ http://cache1.stubhubstatic.com/promotions/scratch/lt/home-content-min-8.3.:2:0\n           ready @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n                 @ http://cache1.stubhubstatic.com/promotions/scratch/lt/home-content-min-8.3.:2:0\n           ready @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:19:0\n            init @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n            init @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:54:0\n               $ @ http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.20111:12:0\n                 @ http://cache1.stubhubstatic.com/promotions/scratch/lt/home-content-min-8.3.:2:0\n     global code @ http://cache1.stubhubstatic.com/promotions/scratch/lt/home-content-min-8.3.:2:0"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "result": {
+         "format": "$1 ($2 reflows)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.facebook.com/plugins/like.php?api_key=&locale=en_US&sdk=joey&ref=footer&channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D18%23cb%3Df2400571a8%26origin%3Dhttp%253A%252F%252Fwww.stubhub.com%252Ff361fab8b8%26domain%3Dwww.stubhub.com%26relation%3Dparent.parent&href=http%3A%2F%2Fwww.facebook.com%2Fstubhub&node_type=link&width=90&font=arial&layout=button_count&colorscheme=light&action=like&show_faces=false&extended_social_context=false"
+          },
+          {
+           "type": "INT_LITERAL",
+           "value": "1"
+          }
+         ]
+        },
+        "details": [
+         {
+          "format": "The following JavaScript call stack caused a reflow that took $1 milliseconds: $2",
+          "args": [
+           {
+            "type": "INT_LITERAL",
+            "value": "1"
+           },
+           {
+            "type": "VERBATIM_STRING",
+            "value": "            @ http://www.facebook.com/plugins/like.php?api_key=&locale=en_US&sdk=joey&ref:94:0\nglobal code @ http://www.facebook.com/plugins/like.php?api_key=&locale=en_US&sdk=joey&ref:94:0"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "result": {
+         "format": "$1 ($2 reflows)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.facebook.com/plugins/like.php?api_key=&locale=en_US&sdk=joey&ref=footer&channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D18%23cb%3Df30e0aad78%26origin%3Dhttp%253A%252F%252Fwww.stubhub.com%252Ff361fab8b8%26domain%3Dwww.stubhub.com%26relation%3Dparent.parent&href=http%3A%2F%2Fwww.facebook.com%2Fstubhub&node_type=link&width=90&font=arial&layout=button_count&colorscheme=light&action=like&show_faces=false&extended_social_context=false"
+          },
+          {
+           "type": "INT_LITERAL",
+           "value": "1"
+          }
+         ]
+        },
+        "details": [
+         {
+          "format": "The following JavaScript call stack caused a reflow that took $1 milliseconds: $2",
+          "args": [
+           {
+            "type": "INT_LITERAL",
+            "value": "1"
+           },
+           {
+            "type": "VERBATIM_STRING",
+            "value": "            @ http://www.facebook.com/plugins/like.php?api_key=&locale=en_US&sdk=joey&ref:94:0\nglobal code @ http://www.facebook.com/plugins/like.php?api_key=&locale=en_US&sdk=joey&ref:94:0"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "result": {
+         "format": "$1 ($2 reflows)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.facebook.com/plugins/like.php?api_key=109259765770403&locale=en_US&sdk=joey&ref=footer&channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D18%23cb%3Df171422d1%26origin%3Dhttp%253A%252F%252Fwww.stubhub.com%252Ff361fab8b8%26domain%3Dwww.stubhub.com%26relation%3Dparent.parent&href=http%3A%2F%2Fwww.facebook.com%2Fstubhub&node_type=link&width=90&font=arial&layout=button_count&colorscheme=light&action=like&show_faces=false&extended_social_context=false"
+          },
+          {
+           "type": "INT_LITERAL",
+           "value": "1"
+          }
+         ]
+        },
+        "details": [
+         {
+          "format": "The following JavaScript call stack caused a reflow that took $1 milliseconds: $2",
+          "args": [
+           {
+            "type": "INT_LITERAL",
+            "value": "1"
+           },
+           {
+            "type": "VERBATIM_STRING",
+            "value": "            @ http://www.facebook.com/plugins/like.php?api_key=109259765770403&locale=en_:94:0\nglobal code @ http://www.facebook.com/plugins/like.php?api_key=109259765770403&locale=en_:94:0"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "EnableGzipCompression": {
+    "localizedRuleName": "Enable compression",
+    "ruleScore": 99,
+    "ruleImpact": 0.4223,
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "Compressing the following resources with gzip could reduce their transfer size by $1 ($2 reduction).",
+       "args": [
+        {
+         "type": "BYTES",
+         "value": "4.1KiB"
+        },
+        {
+         "type": "PERCENTAGE",
+         "value": "52%"
+        }
+       ]
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "Compressing $1 could save $2 ($3 reduction).",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://stubhub.tt.omtrdc.net/m2/stubhub/mbox/standard?mboxHost=www.stubhub.com&mboxSession=1358548123187-900730&mboxPage=1358548123187-900730&screenHeight=768&screenWidth=1024&browserWidth=1024&browserHeight=768&browserTimeOffset=-480&colorDepth=24&mboxCount=2&mbox=homepage-rightrail-test&mboxId=0&mboxTime=1358519323187&mboxURL=http%3A%2F%2Fwww.stubhub.com%2F&mboxReferrer=&mboxVersion=40"
+          },
+          {
+           "type": "BYTES",
+           "value": "1.3KiB"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "57%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Compressing $1 could save $2 ($3 reduction).",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://stubhub-www.baynote.net/baynote/tags3/policy?customerId=stubhub&code=www&subdomain=&userId=UNASSIGNED&userPolicyRequested=true&dataFormat=POLICY_JSONP"
+          },
+          {
+           "type": "BYTES",
+           "value": "950B"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "59%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Compressing $1 could save $2 ($3 reduction).",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://stubhub.tt.omtrdc.net/m2/stubhub/mbox/standard?mboxHost=www.stubhub.com&mboxSession=1358548123187-900730&mboxPage=1358548123187-900730&screenHeight=768&screenWidth=1024&browserWidth=1024&browserHeight=768&browserTimeOffset=-480&colorDepth=24&mboxCount=5&mbox=search_available_tickets&mboxId=0&mboxTime=1358519323187&mboxURL=http%3A%2F%2Fwww.stubhub.com%2F&mboxReferrer=&mboxVersion=40"
+          },
+          {
+           "type": "BYTES",
+           "value": "502B"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "49%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Compressing $1 could save $2 ($3 reduction).",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://stubhub.tt.omtrdc.net/m2/stubhub/mbox/standard?mboxHost=www.stubhub.com&mboxSession=1358548123187-900730&mboxPage=1358548123187-900730&screenHeight=768&screenWidth=1024&browserWidth=1024&browserHeight=768&browserTimeOffset=-480&colorDepth=24&mboxCount=3&mbox=giftcertificates_banner&mboxId=0&mboxTime=1358519323187&mboxURL=http%3A%2F%2Fwww.stubhub.com%2F&mboxReferrer=&mboxVersion=40"
+          },
+          {
+           "type": "BYTES",
+           "value": "499B"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "48%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Compressing $1 could save $2 ($3 reduction).",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://stubhub.tt.omtrdc.net/m2/stubhub/mbox/standard?mboxHost=www.stubhub.com&mboxSession=1358548123187-900730&mboxPage=1358548123187-900730&screenHeight=768&screenWidth=1024&browserWidth=1024&browserHeight=768&browserTimeOffset=-480&colorDepth=24&mboxCount=4&hp_new=true&user=guestuser&mbox=homepage_test_bn&mboxId=0&mboxTime=1358519323187&mboxURL=http%3A%2F%2Fwww.stubhub.com%2F&mboxReferrer=&mboxVersion=40"
+          },
+          {
+           "type": "BYTES",
+           "value": "469B"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "47%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Compressing $1 could save $2 ($3 reduction).",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://stubhub.tt.omtrdc.net/m2/stubhub/mbox/standard?mboxHost=www.stubhub.com&mboxSession=1358548123187-900730&mboxPage=1358548123187-900730&screenHeight=768&screenWidth=1024&browserWidth=1024&browserHeight=768&browserTimeOffset=-480&colorDepth=24&mboxCount=1&pageType=HomePage&section=&mbox_channelId=&mbox_genre_grand_parent_id=-1&mbox_genre_parent=0&mbox_event_id=&mbox=Global&mboxId=0&mboxTime=1358519323187&mboxURL=http%3A%2F%2Fwww.stubhub.com%2F&mboxReferrer=&mboxVersion=40"
+          },
+          {
+           "type": "BYTES",
+           "value": "428B"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "45%"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "InlineSmallCss": {
+    "localizedRuleName": "Inline Small CSS",
+    "ruleScore": 89,
+    "ruleImpact": 1.0,
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "The following external resources have small response bodies. Inlining the response in HTML can reduce blocking of page rendering."
+      }
+     },
+     {
+      "header": {
+       "format": "$1 should inline the following small resources:",
+       "args": [
+        {
+         "type": "URL",
+         "value": "http://www.stubhub.com/"
+        }
+       ]
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.stubhub.com/assets/default.css"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "InlineSmallJavaScript": {
+    "localizedRuleName": "Inline Small JavaScript",
+    "ruleScore": 100,
+    "ruleImpact": 0.0
+   },
+   "LeverageBrowserCaching": {
+    "localizedRuleName": "Leverage browser caching",
+    "ruleScore": 46,
+    "ruleImpact": 21.470713458994705,
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "The following cacheable resources have a short freshness lifetime. Specify an expiration at least one week in the future for the following resources:"
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1 (expiration not specified)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/lt/230x315_ice_hockey.jpg"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 (expiration not specified)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/lt/230x315_mobile.jpg"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 (expiration not specified)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/lt/230x315_ultimate_fan_first.jpg"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 (expiration not specified)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/resources/mojito/css/common/noscript-rb1203.css"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 (expiration not specified)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/resources/mojito/css/feature/home.bundle.rb1207.min.css"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 (expiration not specified)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/resources/mojito/js/common/stubhub-rb1215.js"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 (expiration not specified)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/resources/mojito/js/feature/home-rb1209.js"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 (expiration not specified)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.201111261850.min.js"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 (expiration not specified)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/resources/mojito/js/pattern/phoenix-rb1218.js"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 (expiration not specified)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://s.stubhubstatic.com/resources/mojito/js/lib/TeaLeaf.bundle.201111261850.min.js"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 (expiration not specified)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.stubhub.com/promotions/scratch/billboards/billboard_460X300_supercross.jpg"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 (expiration not specified)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://switch.atdmt.com/action"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://external.ak.fbcdn.net/safe_image.php?d=AQDD6HKiVkqlmAAw&w=200&h=200&url=http%3A%2F%2Fwww.stubhub.com%2Fpromotions%2Fscratch%2Ffb%2Fbtn_FB_connect_2.png&crop"
+          },
+          {
+           "type": "DURATION",
+           "value": "56 seconds"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.stubhub.com/promotions/scratch/foresee_v2/foresee-surveydef.js"
+          },
+          {
+           "type": "DURATION",
+           "value": "3.7 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.stubhub.com/promotions/scratch/billboards/billboard_460X300_concert_male_4.jpg"
+          },
+          {
+           "type": "DURATION",
+           "value": "7.8 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/content/common.js"
+          },
+          {
+           "type": "DURATION",
+           "value": "7.9 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/fb/btn_FB_connect_2.png"
+          },
+          {
+           "type": "DURATION",
+           "value": "10.7 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/common/android_banner.gif"
+          },
+          {
+           "type": "DURATION",
+           "value": "10.8 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache12.stubhubstatic.com/promotions/scratch/billboards/controls.png"
+          },
+          {
+           "type": "DURATION",
+           "value": "12.8 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.stubhub.com/promotions/scratch/foresee_v2/foresee-dhtml.css"
+          },
+          {
+           "type": "DURATION",
+           "value": "13.3 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache12.stubhubstatic.com/promotions/scratch/billboards/bb.css"
+          },
+          {
+           "type": "DURATION",
+           "value": "13.5 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://connect.facebook.net/en_US/all.js"
+          },
+          {
+           "type": "DURATION",
+           "value": "13.6 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://connect.facebook.net/en_US/all.js"
+          },
+          {
+           "type": "DURATION",
+           "value": "14.3 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/test/mbox.js"
+          },
+          {
+           "type": "DURATION",
+           "value": "15.8 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache12.stubhubstatic.com/promotions/scratch/billboards/bb_title_bg.png"
+          },
+          {
+           "type": "DURATION",
+           "value": "16.2 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/billboards/bb.js"
+          },
+          {
+           "type": "DURATION",
+           "value": "17.6 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/fb/btn_FB_logo.png"
+          },
+          {
+           "type": "DURATION",
+           "value": "17.8 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache12.stubhubstatic.com/promotions/scratch/billboards/controls_bg.png"
+          },
+          {
+           "type": "DURATION",
+           "value": "18.4 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/foresee_v2/foresee-trigger.js"
+          },
+          {
+           "type": "DURATION",
+           "value": "18.5 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.stubhub.com/promotions/scratch/billboards/billboard_460X300_theater_female.jpg"
+          },
+          {
+           "type": "DURATION",
+           "value": "18.9 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.stubhub.com/assets/default.css"
+          },
+          {
+           "type": "DURATION",
+           "value": "20.5 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache11.stubhubstatic.com/resources/css/jquery.autocomplete.css"
+          },
+          {
+           "type": "DURATION",
+           "value": "22.7 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/resources/js/third_party/jquery.autocomplete-rb1121.js"
+          },
+          {
+           "type": "DURATION",
+           "value": "22.8 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache11.stubhubstatic.com/resources/css/stubhub.css"
+          },
+          {
+           "type": "DURATION",
+           "value": "23.2 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/common/iphone_banner.gif"
+          },
+          {
+           "type": "DURATION",
+           "value": "23.3 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/test/s_code_common.js"
+          },
+          {
+           "type": "DURATION",
+           "value": "24.9 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.stubhub.com/promotions/scratch/billboards/billboard_460X300_hockey.jpg"
+          },
+          {
+           "type": "DURATION",
+           "value": "25.6 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/billboards/jquery.cycle.min.js"
+          },
+          {
+           "type": "DURATION",
+           "value": "27.2 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache12.stubhubstatic.com/promotions/scratch/common/footer_flags.jpg"
+          },
+          {
+           "type": "DURATION",
+           "value": "28.2 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/baynote/baynote-single.js"
+          },
+          {
+           "type": "DURATION",
+           "value": "29.2 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://platform.twitter.com/widgets.js"
+          },
+          {
+           "type": "DURATION",
+           "value": "30 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://apis.google.com/js/plusone.js"
+          },
+          {
+           "type": "DURATION",
+           "value": "30 minutes"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1 ($2)",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.stubhub.com/feedservices/lcsServices/allFavouriteGenresForDomainAndGeo/domain/stubhub.com/geoId/81?_jsonp=nonstop"
+          },
+          {
+           "type": "DURATION",
+           "value": "50.4 minutes"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "MinifyCss": {
+    "localizedRuleName": "Minify CSS",
+    "ruleScore": 85,
+    "ruleImpact": 0.7039,
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "Minifying the following CSS resources could reduce their size by $1 ($2 reduction).",
+       "args": [
+        {
+         "type": "BYTES",
+         "value": "6.5KiB"
+        },
+        {
+         "type": "PERCENTAGE",
+         "value": "23%"
+        }
+       ]
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "Minifying $1 could save $2 ($3 reduction) after compression.",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache12.stubhubstatic.com/promotions/scratch/lt/www-5.3.css"
+          },
+          {
+           "type": "BYTES",
+           "value": "3.4KiB"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "29%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Minifying $1 could save $2 ($3 reduction) after compression.",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/resources/mojito/css/feature/home.bundle.rb1207.min.css"
+          },
+          {
+           "type": "BYTES",
+           "value": "2.5KiB"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "19%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Minifying $1 could save $2 ($3 reduction) after compression.",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache13.stubhubstatic.com/promotions/scratch/lt/home-content-5.0.css"
+          },
+          {
+           "type": "BYTES",
+           "value": "587B"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "17%"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "MinifyHTML": {
+    "localizedRuleName": "Minify HTML",
+    "ruleScore": 99,
+    "ruleImpact": 0.21550000000000005,
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "Minifying the following HTML resources could reduce their size by $1 ($2 reduction).",
+       "args": [
+        {
+         "type": "BYTES",
+         "value": "1.5KiB"
+        },
+        {
+         "type": "PERCENTAGE",
+         "value": "10%"
+        }
+       ]
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "Minifying $1 could save $2 ($3 reduction) after compression.",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.stubhub.com/"
+          },
+          {
+           "type": "BYTES",
+           "value": "1.5KiB"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "10%"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "MinifyJavaScript": {
+    "localizedRuleName": "Minify JavaScript",
+    "ruleScore": 94,
+    "ruleImpact": 3.5163999999999986,
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "Minifying the following JavaScript resources could reduce their size by $1 ($2 reduction).",
+       "args": [
+        {
+         "type": "BYTES",
+         "value": "33KiB"
+        },
+        {
+         "type": "PERCENTAGE",
+         "value": "9%"
+        }
+       ]
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "Minifying $1 could save $2 ($3 reduction) after compression.",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/resources/mojito/js/common/stubhub-rb1215.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "14.5KiB"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "47%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Minifying $1 could save $2 ($3 reduction) after compression.",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/content/common.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "3.5KiB"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "32%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Minifying $1 could save $2 ($3 reduction) after compression.",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/lt/social-content-3.4.js?_=1358548124187"
+          },
+          {
+           "type": "BYTES",
+           "value": "2.9KiB"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "33%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Minifying $1 could save $2 ($3 reduction) after compression.",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/resources/js/third_party/jquery.autocomplete-rb1121.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "2.3KiB"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "36%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Minifying $1 could save $2 ($3 reduction) after compression.",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/resources/mojito/js/pattern/phoenix-rb1218.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "2KiB"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "35%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Minifying $1 could save $2 ($3 reduction) after compression.",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/resources/mojito/js/lib/jquery.bundle.201111261850.min.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "1.7KiB"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "2%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Minifying $1 could save $2 ($3 reduction) after compression.",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/test/s_code_common.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "1.7KiB"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "9%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Minifying $1 could save $2 ($3 reduction) after compression.",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/baynote/baynote-single.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "1.2KiB"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "5%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Minifying $1 could save $2 ($3 reduction) after compression.",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://s.stubhubstatic.com/resources/mojito/js/lib/TeaLeaf.bundle.201111261850.min.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "1.2KiB"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "7%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Minifying $1 could save $2 ($3 reduction) after compression.",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/foresee_v2/foresee-trigger.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "459B"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "3%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Minifying $1 could save $2 ($3 reduction) after compression.",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.stubhub.com/promotions/scratch/foresee_v2/foresee-surveydef.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "424B"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "21%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Minifying $1 could save $2 ($3 reduction) after compression.",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://connect.facebook.net/en_US/all.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "317B"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "1%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Minifying $1 could save $2 ($3 reduction) after compression.",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://connect.facebook.net/en_US/all.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "316B"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "1%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Minifying $1 could save $2 ($3 reduction) after compression.",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.yggBrfffCmM.O/m=plusone/am=iQ/rt=j/d=1/rs=AItRSTNO2PNKB8cUND6tWqzsI8xazXDOJw/cb=gapi.loaded_0"
+          },
+          {
+           "type": "BYTES",
+           "value": "302B"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "2%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Minifying $1 could save $2 ($3 reduction) after compression.",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/test/mbox.js"
+          },
+          {
+           "type": "BYTES",
+           "value": "288B"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "5%"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "MinimizeRedirects": {
+    "localizedRuleName": "Minimize redirects",
+    "ruleScore": 64,
+    "ruleImpact": 9.0,
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "Remove the following redirect chain if possible:"
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://r.turn.com/r/beacon?b2=7owvfnluczQ1A1TNlIhTO6iak27U6TVmI9klE0u2UwJEZahofymP9g8ge_vo7AatpYbs16gQ79oxWSdmrsCmFw&cid="
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://ad.yieldmanager.com/pixel?id=1539524&t=2"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://ad.yieldmanager.com/pixel?id=1539524&t=2&B=1"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://cookex.amp.yahoo.com/v2/cexposer/SIG=11ongg44g/*https%3A//ad.yieldmanager.com/pixel?id=1539524&t=2&B=1"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://ad.yieldmanager.com/pixel?id=1539524&t=2&B=1&SIG=10vh6jqs7;x-cookie=2b0is1y8sww4h&o=3&f=ob"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "header": {
+       "format": "Remove the following redirect chain if possible:"
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://3791772.fls.doubleclick.net/activityi;src=3791772;type=stubh492;cat=stubh488;ord=2223455386701.971?"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://3791772.fls.doubleclick.net/activityi;src=3791772;type=stubh492;cat=stubh488;ord=2223455386701.971;~oref=http%3A%2F%2Fwww.stubhub.com%2F?&_dc_ck=try"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "header": {
+       "format": "Remove the following redirect chain if possible:"
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://wa.stubhub.com/b/ss/stubhub/1/H.24.4/s13087572283111?AQB=1&ndh=1&t=18%2F0%2F2013%2014%3A28%3A43%205%20480&ns=stubhub&pageName=homepage&g=http%3A%2F%2Fwww.stubhub.com%2F&cc=USD&events=event99&c1=homepage&c11=Home%20page&v13=New&c18=undefined%3A%20homepage&v26=www&c28=H.24.4_20121003&c29=6A844F7C61BE1061187AE74F71C56B8B&tnt=39399%3A1%3A0%2C&s=1024x768&c=24&j=1.6&v=N&k=Y&bw=1024&bh=768&AQE=1"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://wa.stubhub.com/b/ss/stubhub/1/H.24.4/s13087572283111?AQB=1&pccr=true&vidn=287CE64E051D2F18-40000127C000DFDE&&ndh=1&t=18%2F0%2F2013%2014%3A28%3A43%205%20480&ns=stubhub&pageName=homepage&g=http%3A%2F%2Fwww.stubhub.com%2F&cc=USD&events=event99&c1=homepage&c11=Home%20page&v13=New&c18=undefined%3A%20homepage&v26=www&c28=H.24.4_20121003&c29=6A844F7C61BE1061187AE74F71C56B8B&tnt=39399%3A1%3A0%2C&s=1024x768&c=24&j=1.6&v=N&k=Y&bw=1024&bh=768&AQE=1"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "header": {
+       "format": "Remove the following redirect chain if possible:"
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://idcs.interclick.com/Segment.aspx?sid=4342ddd6-570c-4a71-a67b-bae9fec0b815"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://idcs.interclick.com/segmentChecked.aspx?sid=4342ddd6-570c-4a71-a67b-bae9fec0b815"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "header": {
+       "format": "Remove the following redirect chain if possible:"
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://s.tribalfusion.com/i.cid?c=476933&d=30&page=landingPage"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://s.tribalfusion.com/z/i.cid?c=476933&d=30&page=landingPage"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "header": {
+       "format": "Remove the following redirect chain if possible:"
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://www.facebook.com/dialog/oauth?client_id=109259765770403&response_type=token%2Csigned_request%2Ccode&display=none&domain=www.stubhub.com&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D18%23cb%3Df1e0cf4208%26origin%3Dhttp%253A%252F%252Fwww.stubhub.com%252Ff361fab8b8%26domain%3Dwww.stubhub.com%26relation%3Dparent&sdk=joey"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://static.ak.facebook.com/connect/xd_arbiter.php?version=18"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "MinimizeRequestSize": {
+    "localizedRuleName": "Minimize request size",
+    "ruleScore": 95,
+    "ruleImpact": 0.1865,
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "The requests for the following URLs don't fit in a single packet.  Reducing the size of these requests could reduce latency."
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1 has a request size of $2",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.stubhub.com/"
+          },
+          {
+           "type": "BYTES",
+           "value": "1.8KiB"
+          }
+         ]
+        },
+        "details": [
+         {
+          "format": "Request URL: $1",
+          "args": [
+           {
+            "type": "BYTES",
+            "value": "23B"
+           }
+          ]
+         },
+         {
+          "format": "Cookies: $1",
+          "args": [
+           {
+            "type": "BYTES",
+            "value": "1.8KiB"
+           }
+          ]
+         },
+         {
+          "format": "Referer Url: $1",
+          "args": [
+           {
+            "type": "BYTES",
+            "value": "0B"
+           }
+          ]
+         },
+         {
+          "format": "Other: $1",
+          "args": [
+           {
+            "type": "BYTES",
+            "value": "23B"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "OptimizeImages": {
+    "localizedRuleName": "Optimize images",
+    "ruleScore": 71,
+    "ruleImpact": 5.019500000000002,
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "Optimizing the following images could reduce their size by $1 ($2 reduction).",
+       "args": [
+        {
+         "type": "BYTES",
+         "value": "48.4KiB"
+        },
+        {
+         "type": "PERCENTAGE",
+         "value": "21%"
+        }
+       ]
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "Losslessly compressing $1 could save $2 ($3 reduction).",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/lt/stay_connected_uk.jpg"
+          },
+          {
+           "type": "BYTES",
+           "value": "16.4KiB"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "55%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Losslessly compressing $1 could save $2 ($3 reduction).",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/common/android_banner.gif"
+          },
+          {
+           "type": "BYTES",
+           "value": "7.9KiB"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "42%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Losslessly compressing $1 could save $2 ($3 reduction).",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/common/iphone_banner.gif"
+          },
+          {
+           "type": "BYTES",
+           "value": "7.9KiB"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "41%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Losslessly compressing $1 could save $2 ($3 reduction).",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache12.stubhubstatic.com/promotions/scratch/lt/button_search.png"
+          },
+          {
+           "type": "BYTES",
+           "value": "3.8KiB"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "53%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Losslessly compressing $1 could save $2 ($3 reduction).",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/resources/mojito/img/feature/browse/tabs_bottom_sprite.png"
+          },
+          {
+           "type": "BYTES",
+           "value": "3.4KiB"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "97%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Losslessly compressing $1 could save $2 ($3 reduction).",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/resources/mojito/img/feature/browse/tabs_sprite.png"
+          },
+          {
+           "type": "BYTES",
+           "value": "2.9KiB"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "42%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Losslessly compressing $1 could save $2 ($3 reduction).",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://fbexternal-a.akamaihd.net/safe_image.php?d=AQAREkfoQcQrRHbZ&w=200&h=200&url=http%3A%2F%2Fcache1.stubhubstatic.com%2Fpromotions%2Fscratch%2Ffb%2Ffb_tile_rock.gif&crop"
+          },
+          {
+           "type": "BYTES",
+           "value": "2.1KiB"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "12%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Losslessly compressing $1 could save $2 ($3 reduction).",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.stubhub.com/promotions/scratch/billboards/billboard_460X300_concert_male_4.jpg"
+          },
+          {
+           "type": "BYTES",
+           "value": "915B"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "3%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Losslessly compressing $1 could save $2 ($3 reduction).",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.stubhub.com/promotions/scratch/billboards/billboard_460X300_supercross.jpg"
+          },
+          {
+           "type": "BYTES",
+           "value": "897B"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "3%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Losslessly compressing $1 could save $2 ($3 reduction).",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.stubhub.com/promotions/scratch/billboards/billboard_460X300_hockey.jpg"
+          },
+          {
+           "type": "BYTES",
+           "value": "884B"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "3%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Losslessly compressing $1 could save $2 ($3 reduction).",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache12.stubhubstatic.com/promotions/scratch/billboards/controls.png"
+          },
+          {
+           "type": "BYTES",
+           "value": "818B"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "26%"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "Losslessly compressing $1 could save $2 ($3 reduction).",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache13.stubhubstatic.com/promotions/scratch/lt/tabs_buy_sell_sprite_v2.0.png"
+          },
+          {
+           "type": "BYTES",
+           "value": "598B"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "15%"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "OptimizeTheOrderOfStylesAndScripts": {
+    "localizedRuleName": "Optimize the order of styles and scripts",
+    "ruleScore": 70,
+    "ruleImpact": 2.0,
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "The following inline script blocks were found in $1 between an external CSS file and another resource.  To allow parallel downloading, move the inline script before the external CSS file, or after the next resource.",
+       "args": [
+        {
+         "type": "URL",
+         "value": "http://www.stubhub.com/"
+        }
+       ]
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "Inline script block #$1",
+         "args": [
+          {
+           "type": "INT_LITERAL",
+           "value": "1"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "header": {
+       "format": "The following external CSS files were included after an external JavaScript file in $1.  To ensure CSS files are downloaded in parallel, always include external CSS before  external JavaScript.",
+       "args": [
+        {
+         "type": "URL",
+         "value": "http://www.stubhub.com/"
+        }
+       ]
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache13.stubhubstatic.com/promotions/scratch/lt/home-content-5.0.css"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache11.stubhubstatic.com/resources/css/jquery.autocomplete.css"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache12.stubhubstatic.com/promotions/scratch/billboards/bb.css"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "PreferAsyncResources": {
+    "localizedRuleName": "Prefer asynchronous resources",
+    "ruleScore": 85,
+    "ruleImpact": 1.0,
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "The following resources are loaded synchronously. Load them asynchronously to reduce blocking of page rendering."
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1 loads $2 synchronously.",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.stubhub.com/"
+          },
+          {
+           "type": "URL",
+           "value": "https://connect.facebook.net/en_US/all.js"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "PutCssInTheDocumentHead": {
+    "localizedRuleName": "Put CSS in the document head",
+    "ruleScore": 95,
+    "ruleImpact": 0.001,
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "CSS in the document body adversely impacts rendering performance."
+      }
+     },
+     {
+      "header": {
+       "format": "$1 has CSS in the document body:",
+       "args": [
+        {
+         "type": "URL",
+         "value": "http://www.stubhub.com/"
+        }
+       ]
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1 style block(s) in the body should be moved to the document head.",
+         "args": [
+          {
+           "type": "INT_LITERAL",
+           "value": "1"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "RemoveQueryStringsFromStaticResources": {
+    "localizedRuleName": "Remove query strings from static resources",
+    "ruleScore": 91,
+    "ruleImpact": 0.0,
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "Resources with a \"?\" in the URL are not cached by some proxy caching servers.  Remove the query string and encode the parameters into the URL for the following resources:"
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/lt/home-content-min-8.3.js?_=1358548124187"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://external.ak.fbcdn.net/safe_image.php?d=AQCxvneF1bWqbhz0&w=200&h=200&url=http%3A%2F%2Fcache1.stubhubstatic.com%2Fpromotions%2Fscratch%2Ffb%2Fsh-fb-tile-438.png&crop"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://external.ak.fbcdn.net/safe_image.php?d=AQDD6HKiVkqlmAAw&w=200&h=200&url=http%3A%2F%2Fwww.stubhub.com%2Fpromotions%2Fscratch%2Ffb%2Fbtn_FB_connect_2.png&crop"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://stubhub-www.baynote.net/baynote/tags3/policy?customerId=stubhub&code=www&subdomain=&userId=UNASSIGNED&userPolicyRequested=true&dataFormat=POLICY_JSONP"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://www.stubhub.com/feedservices/lcsServices/allFavouriteGenresForDomainAndGeo/domain/stubhub.com/geoId/81?_jsonp=nonstop"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://fbexternal-a.akamaihd.net/safe_image.php?d=AQAREkfoQcQrRHbZ&w=200&h=200&url=http%3A%2F%2Fcache1.stubhubstatic.com%2Fpromotions%2Fscratch%2Ffb%2Ffb_tile_rock.gif&crop"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://fbexternal-a.akamaihd.net/safe_image.php?d=AQCxvneF1bWqbhz0&w=200&h=200&url=http%3A%2F%2Fcache1.stubhubstatic.com%2Fpromotions%2Fscratch%2Ffb%2Fsh-fb-tile-438.png&crop"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "ServeResourcesFromAConsistentUrl": {
+    "localizedRuleName": "Serve resources from a consistent URL",
+    "ruleScore": 74,
+    "ruleImpact": 10.879700000000001,
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "The following resources have identical contents, but are served from different URLs.  Serve these resources from a consistent URL to save $1 request(s) and $2.",
+       "args": [
+        {
+         "type": "INT_LITERAL",
+         "value": "1"
+        },
+        {
+         "type": "BYTES",
+         "value": "32.4KiB"
+        }
+       ]
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://external.ak.fbcdn.net/safe_image.php?d=AQCxvneF1bWqbhz0&w=200&h=200&url=http%3A%2F%2Fcache1.stubhubstatic.com%2Fpromotions%2Fscratch%2Ffb%2Fsh-fb-tile-438.png&crop"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://fbexternal-a.akamaihd.net/safe_image.php?d=AQCxvneF1bWqbhz0&w=200&h=200&url=http%3A%2F%2Fcache1.stubhubstatic.com%2Fpromotions%2Fscratch%2Ffb%2Fsh-fb-tile-438.png&crop"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "header": {
+       "format": "The following resources have identical contents, but are served from different URLs.  Serve these resources from a consistent URL to save $1 request(s) and $2.",
+       "args": [
+        {
+         "type": "INT_LITERAL",
+         "value": "1"
+        },
+        {
+         "type": "BYTES",
+         "value": "24.9KiB"
+        }
+       ]
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://static.ak.facebook.com/connect/xd_arbiter.php?version=18"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://s-static.ak.facebook.com/connect/xd_arbiter.php?version=18"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "ServeScaledImages": {
+    "localizedRuleName": "Serve scaled images",
+    "ruleScore": 97,
+    "ruleImpact": 3.2175000000000002,
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "The following images are resized in HTML or CSS.  Serving scaled images could save $1 ($2 reduction).",
+       "args": [
+        {
+         "type": "BYTES",
+         "value": "31.4KiB"
+        },
+        {
+         "type": "PERCENTAGE",
+         "value": "96%"
+        }
+       ]
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1 is resized in HTML or CSS from $2x$3 to $4x$5.  Serving a scaled image could save $6 ($7 reduction).",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://fbexternal-a.akamaihd.net/safe_image.php?d=AQCxvneF1bWqbhz0&w=200&h=200&url=http%3A%2F%2Fcache1.stubhubstatic.com%2Fpromotions%2Fscratch%2Ffb%2Fsh-fb-tile-438.png&crop"
+          },
+          {
+           "type": "INT_LITERAL",
+           "value": "200"
+          },
+          {
+           "type": "INT_LITERAL",
+           "value": "200"
+          },
+          {
+           "type": "INT_LITERAL",
+           "value": "35"
+          },
+          {
+           "type": "INT_LITERAL",
+           "value": "35"
+          },
+          {
+           "type": "BYTES",
+           "value": "31.4KiB"
+          },
+          {
+           "type": "PERCENTAGE",
+           "value": "96%"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "SpecifyACacheValidator": {
+    "localizedRuleName": "Specify a cache validator",
+    "ruleScore": 97,
+    "ruleImpact": 0.5,
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "The following resources are missing a cache validator. Resources that do not specify a cache validator cannot be refreshed efficiently. Specify a Last-Modified or ETag header to enable cache validation for the following resources:"
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://stubhub-www.baynote.net/baynote/tags3/policy?customerId=stubhub&code=www&subdomain=&userId=UNASSIGNED&userPolicyRequested=true&dataFormat=POLICY_JSONP"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "https://switch.atdmt.com/action"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "SpecifyAVaryAcceptEncodingHeader": {
+    "localizedRuleName": "Specify a Vary: Accept-Encoding header",
+    "ruleScore": 98,
+    "ruleImpact": 0.0,
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "The following publicly cacheable, compressible resources should have a \"Vary: Accept-Encoding\" header:"
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://stubhub-www.baynote.net/baynote/tags3/policy?customerId=stubhub&code=www&subdomain=&userId=UNASSIGNED&userPolicyRequested=true&dataFormat=POLICY_JSONP"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "SpecifyCharsetEarly": {
+    "localizedRuleName": "Specify a character set",
+    "ruleScore": 100,
+    "ruleImpact": 0.0
+   },
+   "SpecifyImageDimensions": {
+    "localizedRuleName": "Specify image dimensions",
+    "ruleScore": 100,
+    "ruleImpact": 0.0
+   },
+   "SpriteImages": {
+    "localizedRuleName": "Combine images into CSS sprites",
+    "ruleScore": 84,
+    "ruleImpact": 4.0,
+    "urlBlocks": [
+     {
+      "header": {
+       "format": "The following images served from $1 should be combined into as few images as possible using CSS sprites.",
+       "args": [
+        {
+         "type": "STRING_LITERAL",
+         "value": "stubhubstatic.com"
+        }
+       ]
+      },
+      "urls": [
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/lt/c_srch.gif"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/promotions/scratch/lt/mm_chev.png"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache1.stubhubstatic.com/resources/mojito/img/pattern/phoenix/arrows_orange.gif"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache12.stubhubstatic.com/promotions/scratch/billboards/controls_bg.png"
+          }
+         ]
+        }
+       },
+       {
+        "result": {
+         "format": "$1",
+         "args": [
+          {
+           "type": "URL",
+           "value": "http://cache12.stubhubstatic.com/promotions/scratch/lt/mm_bg.gif"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "version": {
+  "major": 1,
+  "minor": 12
+ }
+}
