@@ -9,7 +9,10 @@ In order to run the script you need to edit it and ensure you have filled ouot t
 
 It is recommended that you install the HAR Viewer so that once you've generated a HAR file from WPT, you can then view it on your local.  For more information on the offline  HAR Viewer go to: http://code.google.com/p/harviewer/
 
-Executing the script:runWPTTest.sh <URL> <NumOfRuns>
+Executing the script:runWPTTest.sh <URL> <label> <NumOfRuns>
      <URL> is a required paramater
+     <label> is an option paramater
      <NumOfRuns> is an option paramater
 
+
+The HARStorage directory contains supporting scripts and a pagespeed binary for Mac OSX 10.8.2 which I'm feeding the downloaded HAR files into.
