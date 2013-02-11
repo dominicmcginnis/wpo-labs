@@ -14,18 +14,26 @@ VIDEO="1"
 
 NOW=`date '+%Y-%m-%d-%H-%M-%S'`
 
+LABEL="default"
+
 SLEEP_DURATION=120
 
 if [ "$1" != "" ]; then
-	URL=$1;
-else 
-	echo "Usage: runWPTTest.sh <URL> <NumOfRuns>";
-	echo "   <URL> is a required paramater";
-	echo "   <NumOfRuns> is an option paramater";
-	exit;
+        URL=$1;
+else
+        echo "Usage: runWPTTest.sh <URL> <label> <NumOfRuns>";
+        echo "   <URL> is a required paramater";
+        echo "   <label> is an option paramater";
+        echo "   <NumOfRuns> is an option paramater";
+        exit;
 fi
+
 if [ "$2" != "" ]; then
-	RUNS=$2;
+        LABEL=$2;
+fi
+
+if [ "$3" != "" ]; then
+        RUNS=$3;
 fi
 
 if [ $API_KEY == "" ]; then
@@ -41,7 +49,7 @@ HAR_FILE=`echo $URL-$NOW.har |sed -e "s/\//-/g" | sed -e "s/?/-/g" | sed -e "s/=
 RESULT_FILE=`echo $URL-$NOW-results.xml |sed -e "s/\//-/g" | sed -e "s/?/-/g" | sed -e "s/=/-/g"`
 STATUS_FILE=`echo $URL-$NOW-status.xml |sed -e "s/\//-/g" | sed -e "s/?/-/g" | sed -e "s/=/-/g"`
 
-curl -s "$WPT_TEST_URL?location=$LOCATION&runs=$RUNS&f=xml&k=$API_KEY&video=$VIDEO&private=$PRIVATE&url=$URL" > $WORKING_DIR/$RESULT_FILE
+curl -s "$WPT_TEST_URL?location=$LOCATION&runs=$RUNS&f=xml&k=$API_KEY&video=$VIDEO&private=$PRIVATE&label=$LABEL&url=$URL" > $WORKING_DIR/$RESULT_FILE
 
 RESULT=`xmllint --xpath "/response/statusCode/text()" $WORKING_DIR/$RESULT_FILE`
 echo "Checking results file for status $WORKING_DIR/$RESULT_FILE"
