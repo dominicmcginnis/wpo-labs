@@ -1,0 +1,22 @@
+//Unified	checkout WPT script
+logData	0
+//	go to the login screen for a specific purchase
+navigate	https://buy.srwq14.com/checkout/mobile/Signin?ticket_id=513354434&redir=%2Fnewcheckout%2F%3Fticket_id%3D513354434%26quantity_selected%3D2
+
+//	Log in
+//Set Attribute Value for fields
+setValue	id=loginEmail	api_us_sell_ls04@testmail.com
+setValue	id=loginPassword	password
+setValue	id=rememberMe	on
+setValue	id=uniqueSessionGuid	513354434
+
+// Due to text area containing dummy default data we'll also need to use javascript to populate correctly
+exec	document.getElementById('loginEmail').value = 'api_us_sell_ls04@testmail.com';
+exec	document.getElementById('loginPassword').value = 'password';
+
+submitForm	id=signinForm
+
+logData	1
+
+//Now that we are signed in, lets capture the time taken to load XO step 1
+navigate	https://buy.srwq14.com/checkout/mobile/deliveryinfo?logisticsMethod=24&ticket_id=513354434
