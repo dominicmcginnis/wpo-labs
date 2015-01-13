@@ -31,8 +31,8 @@ WORKING_DIR="./working"
 HAR_DIR="./harfiles"
 
 # Used with Jenkins
-WORKING_DIR="$WORKSPACE/$BUILD_NUMBER/working"
-HAR_DIR="$WORKSPACE/$BUILD_NUMBER/harfiles"
+#WORKING_DIR="$WORKSPACE/$BUILD_NUMBER/working"
+#HAR_DIR="$WORKSPACE/$BUILD_NUMBER/harfiles"
 
 #Replace bad filesystem chars within the files
 BASE_FILE=`echo $URL-$NOW |sed -e "s/http:\/\///g" |sed -e "s/\//-/g" | sed -e "s/?/-/g" | sed -e "s/=/-/g"`
@@ -71,7 +71,7 @@ if [ "200" -eq $RESULT ]; then
 	curl -s "$WPT_HAR_DOWNLOAD_URL?test=$TEST_ID" > $HAR_DIR/$HAR_FILE
 
 	# Set the proper label for the test
-	cat $HAR_DIR/$HAR_FILE | sed -e "s/page_1_0/$LABEL/" > $HAR_DIR/$HAR_FILE.new
+	cat $HAR_DIR/$HAR_FILE | sed -e "s/\"title\"/\"label\":\"$LABEL\",\"title\"/" > $HAR_DIR/$HAR_FILE.new
 	mv  $HAR_DIR/$HAR_FILE.new $HAR_DIR/$HAR_FILE
 
 	# Set a "source" element so we can click to the WPT Test from anywhere

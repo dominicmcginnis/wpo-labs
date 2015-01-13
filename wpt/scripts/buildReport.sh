@@ -33,6 +33,9 @@ TEAM_TEST_PARAMS="step_4_label=unifiedTeam_cable_prod&"\
 #"step_4_label=unifiedTeam_cable_prod_TX&"\
 #"step_4_label=unifiedTeam_cable_prod_VA&"\
 #"step_4_label_hidden=unifiedTeam_cable_prod%2unifiedTeam_cable_prod_TX%2unifiedTeam_cable_prod_VA&"\
+#"step_4_start_ts=$START_DATE&step_4_end_ts=$END_DATE"
+#"step_4_label_hidden=unifiedTeam_cable_prod&"\
+#"step_4_start_ts=$START_DATE&step_4_end_ts=$END_DATE"
 
 ARTIST_TEST_PARAMS="step_5_label=unifiedArtist_cable_prod&"\
 "step_5_label_hidden=unifiedArtist_cable_prod&"\
@@ -40,6 +43,9 @@ ARTIST_TEST_PARAMS="step_5_label=unifiedArtist_cable_prod&"\
 #"step_5_label=unifiedArtist_cable_prod_TX&"\
 #"step_5_label=unifiedArtist_cable_prod_VA&"\
 #"step_5_label_hidden=unifiedArtist_cable_prod%2unifiedArtist_cable_prod_TX%2unifiedArtist_cable_prod_VA&"\
+#"step_5_start_ts=$START_DATE&step_5_end_ts=$END_DATE"
+#"step_5_label_hidden=unifiedArtist_cable_prod&"\
+#"step_5_start_ts=$START_DATE&step_5_end_ts=$END_DATE"
 
 VENUE_TEST_PARAMS="step_6_label=unifiedVenue_cable_prod&"\
 "step_6_label_hidden=unifiedVenue_cable_prod&"\
@@ -47,13 +53,14 @@ VENUE_TEST_PARAMS="step_6_label=unifiedVenue_cable_prod&"\
 #"step_6_label=unifiedVenue_cable_prod_TX&"\
 #"step_6_label=unifiedVenue_cable_prod_VA&"\
 #"step_6_label_hidden=unifiedVenue_cable_prod%2unifiedVenue_cable_prod_TX%2unifiedVenue_cable_prod_VA&"\
+#"step_6_start_ts=$START_DATE&step_6_end_ts=$END_DATE"
+#"step_6_label_hidden=unifiedVenue_cable_prod&"\
+#"step_6_start_ts=$START_DATE&step_6_end_ts=$END_DATE"
 
-XO_LANDING_TEST_PARAMS="step_7_label=xo_newxo_cable_prod&"\
-"step_7_label_hidden=xo_newxo_cable_prod&"\
+XO_LANDING_TEST_PARAMS="step_7_label=xo_newxo_cable_prod_TX&"\
+"step_7_label=xo_newxo_cable_prod_VA&"\
+"step_7_label_hidden=xo_newxo_cable_prod%2xo_newxo_cable_prod_TX%2xo_newxo_cable_prod_VA&"\
 "step_7_start_ts=$START_DATE&step_7_end_ts=$END_DATE"
-#"step_7_label=xo_newxo_cable_prod_TX&"\
-#"step_7_label=xo_newxo_cable_prod_VA&"\
-#"step_7_label_hidden=xo_newxo_cable_prod%2xo_newxo_cable_prod_TX%2xo_newxo_cable_prod_VA&"\
 
 URL_PARAMS="$EVENT_TEST_PARAMS&"\
 "$HP_TEST_PARAMS&"\
@@ -143,10 +150,11 @@ done
 
 function sendReport {
 	EMAIL_SUBJECT="Daily Performance KPI Report"
-	EMAIL_BODY="The following is the performance aggregate report at the 90th% for `date +%Y-%m-%d+00:00:00`."
-#	TO_LIST="rmcginnis@stubhub.com"
-	TO_LIST="DL-SH-UI-Unified@corp.ebay.com, rmcginnis@stubhub.com, raidun@ebay.com"
-	`/root/email/send_email --subject "${EMAIL_SUBJECT}" --to ${TO_LIST} < ${DAILY_REPORT}`
+	TO_LIST="ooxenham@stubhub.com,kkrishnasamy@stubhub.com,kartchandrasekar@ebay.com,bkalra@stubhub.com,mjasso@stubhub.com,mtanaka@stubhub.com,rmcginnis@stubhub.com"
+	CC_LIST="raidun@ebay.com,sveio@stubhub.com,Prapunja.Pokhrel@stubhub.com,zzhou2@ebay.com,bamccoy@stubhub.com,vgudi@stubhub.com,cchi@ebay.com"
+	##Uncomment for testing	
+	#`/root/email/send_email --subject "${EMAIL_SUBJECT}" --to "rmcginnis@stubhub.com" < ${DAILY_REPORT}`
+	`/root/email/send_email --subject "${EMAIL_SUBJECT}" --to "${TO_LIST}" --cc "${CC_LIST}" < ${DAILY_REPORT}`
 }
 
 #Define actual report names
