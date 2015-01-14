@@ -59,7 +59,7 @@ VENUE_TEST_PARAMS="step_6_label=unifiedVenue_cable_prod&"\
 
 XO_LANDING_TEST_PARAMS="step_7_label=xo_newxo_cable_prod_TX&"\
 "step_7_label=xo_newxo_cable_prod_VA&"\
-"step_7_label_hidden=xo_newxo_cable_prod%2xo_newxo_cable_prod_TX%2xo_newxo_cable_prod_VA&"\
+"step_7_label_hidden=xo_newxo_cable_prod_TX%2Cxo_newxo_cable_prod_VA&"\
 "step_7_start_ts=$START_DATE&step_7_end_ts=$END_DATE"
 
 URL_PARAMS="$EVENT_TEST_PARAMS&"\
