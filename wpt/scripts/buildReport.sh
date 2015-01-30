@@ -15,52 +15,46 @@ function getData {
 
 echo "Getting data for: ${START_DATE} - ${END_DATE}"
 
-EVENT_TEST_PARAMS="step_1_label=unifiedEvent_cable_prod&"\
-"step_1_label=unifiedEvent_cable_prod_TX&"\
-"step_1_label=unifiedEvent_cable_prod_VA&"\
-"step_1_label=unifiedEvent_cable_prod_OR&"\
-"step_1_label_hidden=unifiedEvent_cable_prod%2CunifiedEvent_cable_prod_TX%2CunifiedEvent_cable_prod_VA%2CunifiedEvent_cable_prod_OR&"\
+EVENT_TEST_PARAMS="step_1_label=unifiedEvent_cable_prod_CENTRAL&"\
+"step_1_label=unifiedEvent_cable_prod_EAST&"\
+"step_1_label=unifiedEvent_cable_prod_WEST&"\
+"step_1_label_hidden=unifiedEvent_cable_prod_CENTRAL%2CunifiedEvent_cable_prod_EAST%2CunifiedEvent_cable_prod_WEST&"\
 "step_1_start_ts=$START_DATE&step_1_end_ts=$END_DATE"
 
-HP_TEST_PARAMS="step_2_label=unifiedHP_cable_prod&"\
-"step_2_label=unifiedHP_cable_prod_TX&"\
-"step_2_label=unifiedHP_cable_prod_VA&"\
-"step_2_label=unifiedHP_cable_prod_OR&"\
-"step_2_label_hidden=unifiedHP_cable_prod%2CunifiedHP_cable_prod_TX%2CunifiedHP_cable_prod_VA%2CunifiedHP_cable_prod_OR&"\
+HP_TEST_PARAMS="step_2_label=unifiedHP_cable_prod_CENTRAL&"\
+"step_2_label=unifiedHP_cable_prod_EAST&"\
+"step_2_label=unifiedHP_cable_prod_WEST&"\
+"step_2_label_hidden=unifiedHP_cable_prod_CENTRAL%2CunifiedHP_cable_prod_EAST%2CunifiedHP_cable_prod_WEST&"\
 "step_2_start_ts=$START_DATE&step_2_end_ts=$END_DATE"
 
-SEARCH_TEST_PARAMS="step_3_label=unifiedSearchResults_cable_prod&"\
-"step_3_label=unifiedSearchResults_cable_prod_TX&"\
-"step_3_label=unifiedSearchResults_cable_prod_VA&"\
-"step_3_label=unifiedSearchResults_cable_prod_OR&"\
-"step_3_label_hidden=unifiedSearchResults_cable_prod%2CunifiedSearchResults_cable_prod_TX%2CunifiedSearchResults_cable_prod_VA%2CunifiedSearchResults_cable_prod_OR&"\
+SEARCH_TEST_PARAMS="step_3_label=unifiedSearchResults_cable_prod_CENTRAL&"\
+"step_3_label=unifiedSearchResults_cable_prod_EAST&"\
+"step_3_label=unifiedSearchResults_cable_prod_WEST&"\
+"step_3_label_hidden=unifiedSearchResults_cable_prod_CENTRAL%2CunifiedSearchResults_cable_prod_EAST%2CunifiedSearchResults_cable_prod_WEST&"\
 "step_3_start_ts=$START_DATE&step_3_end_ts=$END_DATE"
 
-TEAM_TEST_PARAMS="step_4_label=unifiedTeam_cable_prod&"\
-"step_4_label=unifiedTeam_cable_prod_TX&"\
-"step_4_label=unifiedTeam_cable_prod_VA&"\
-"step_4_label=unifiedTeam_cable_prod_OR&"\
-"step_4_label_hidden=unifiedTeam_cable_prod%2CunifiedTeam_cable_prod_TX%2CunifiedTeam_cable_prod_VA%2CunifiedTeam_cable_prod_OR&"\
+TEAM_TEST_PARAMS="step_4_label=unifiedTeam_cable_prod_CENTRAL&"\
+"step_4_label=unifiedTeam_cable_prod_EAST&"\
+"step_4_label=unifiedTeam_cable_prod_WEST&"\
+"step_4_label_hidden=unifiedTeam_cable_prod_CENTRAL%2CunifiedTeam_cable_prod_EAST%2CunifiedTeam_cable_prod_WEST&"\
 "step_4_start_ts=$START_DATE&step_4_end_ts=$END_DATE"
 
-ARTIST_TEST_PARAMS="step_5_label=unifiedArtist_cable_prod&"\
-"step_5_label=unifiedArtist_cable_prod_TX&"\
-"step_5_label=unifiedArtist_cable_prod_VA&"\
-"step_5_label=unifiedArtist_cable_prod_OR&"\
-"step_5_label_hidden=unifiedArtist_cable_prod%2CunifiedArtist_cable_prod_TX%2CunifiedArtist_cable_prod_VA%2CunifiedArtist_cable_prod_OR&"\
+ARTIST_TEST_PARAMS="step_5_label=unifiedArtist_cable_prod_CENTRAL&"\
+"step_5_label=unifiedArtist_cable_prod_EAST&"\
+"step_5_label=unifiedArtist_cable_prod_WEST&"\
+"step_5_label_hidden=unifiedArtist_cable_prod_CENTRAL%2CunifiedArtist_cable_prod_EAST%2CunifiedArtist_cable_prod_WEST&"\
 "step_5_start_ts=$START_DATE&step_5_end_ts=$END_DATE"
 
-VENUE_TEST_PARAMS="step_6_label=unifiedVenue_cable_prod&"\
-"step_6_label=unifiedVenue_cable_prod_TX&"\
-"step_6_label=unifiedVenue_cable_prod_VA&"\
-"step_6_label=unifiedVenue_cable_prod_OR&"\
-"step_6_label_hidden=unifiedVenue_cable_prod%2CunifiedVenue_cable_prod_TX%2CunifiedVenue_cable_prod_VA%2CunifiedVenue_cable_prod_OR&"\
+VENUE_TEST_PARAMS="step_6_label=unifiedVenue_cable_prod_CENTRAL&"\
+"step_6_label=unifiedVenue_cable_prod_EAST&"\
+"step_6_label=unifiedVenue_cable_prod_WEST&"\
+"step_6_label_hidden=unifiedVenue_cable_prod_CENTRAL%2CunifiedVenue_cable_prod_EAST%2CunifiedVenue_cable_prod_WEST&"\
 "step_6_start_ts=$START_DATE&step_6_end_ts=$END_DATE"
 
-XO_LANDING_TEST_PARAMS="step_7_label=xo_newxo_cable_prod_TX&"\
-"step_7_label=xo_newxo_cable_prod_VA&"\
-"step_7_label=xo_newxo_cable_prod_OR&"\
-"step_7_label_hidden=xo_newxo_cable_prod_TX%2Cxo_newxo_cable_prod_VA%2Cxo_newxo_cable_prod_OR&"\
+XO_LANDING_TEST_PARAMS="step_7_label=xo_newxo_cable_prod_CENTRAL&"\
+"step_7_label=xo_newxo_cable_prod_EAST&"\
+"step_7_label=xo_newxo_cable_prod_WEST&"\
+"step_7_label_hidden=xo_newxo_cable_prod_CENTRAL%2Cxo_newxo_cable_prod_EAST%2Cxo_newxo_cable_prod_WEST&"\
 "step_7_start_ts=$START_DATE&step_7_end_ts=$END_DATE"
 
 URL_PARAMS="$EVENT_TEST_PARAMS&"\
@@ -70,7 +64,7 @@ URL_PARAMS="$EVENT_TEST_PARAMS&"\
 "$ARTIST_TEST_PARAMS&"\
 "$VENUE_TEST_PARAMS&"\
 "$XO_LANDING_TEST_PARAMS&"\
-"chart=column&table=true&metric=$METRIC"
+"chart=column&table=true&metric=$METRIC&timeFormat=s"
 
 
 echo "Running: $REPORT_URL?$URL_PARAMS"
@@ -118,7 +112,7 @@ function beginTable {
 }
 
 function finalizeReport {
-	echo "</tbody></table></div></body></html>" >> $DAILY_REPORT
+    echo "</tbody></table></div><div><p>For more information and a breakout by region visit: http://srwv00dev059.stubcorp.dev:5000/results/dashboard</p></div></body></html>" >> $DAILY_REPORT
 }
 
 function populateTable {
@@ -195,7 +189,7 @@ do
 		#DATE_LABEL=`date -v-${END_DAYS_BACK}d +%Y-%m-%d`
 		DATE_LABEL=`date -d "${END_DAYS_BACK} days ago" +%Y-%m-%d`
 	fi
-	TIME_LABEL="${TIME_LABEL}<th class='center'>Full Load Time (ms)</th>"
+	TIME_LABEL="${TIME_LABEL}<th class='center'>Full Load Time (s)</th>"
 	#START_DATE=`date -v-${START_DAYS_BACK}d +%Y-%m-%d+00:00:00`	
 	#END_DATE=`date -v-${END_DAYS_BACK}d +%Y-%m-%d+00:00:00`
 	START_DATE=`date -d "${START_DAYS_BACK} days ago" +%Y-%m-%d+00:00:00`	
