@@ -72,6 +72,11 @@ function getGoal {
 	ROW="$1"
 	TYPE="$2"
 
+	if [ "$TYPE" == "Ads" ]; then
+		echo "n/a"
+		return
+	fi
+
 	case "${ROW}" in
 		0)
 		#Site Speed Goal
@@ -269,7 +274,7 @@ URL_PARAMS="$EVENT_TEST_PARAMS&"\
 
 echo "Running: $REPORT_URL?$URL_PARAMS"
 
-DATES_ROW="${DATES_ROW}<th colspan='4'><a href='$REPORT_URL?$URL_PARAMS'>$DATE_LABEL</a></th>"
+DATES_ROW="${DATES_ROW}<th colspan='5'><a href='$REPORT_URL?$URL_PARAMS'>$DATE_LABEL</a></th>"
 
 curl -s "$REPORT_URL?$URL_PARAMS" > $OUTPUT_FILE
 
@@ -286,6 +291,7 @@ for j in "${ROWS[@]}";
 do
 	FPT_ROW_VALUE="0.0"
 	UX_ROW_VALUE="0.0"
+	ADS_ROW_VALUE="0.0"
 	FPT_PRC_DEV_VALUE=""
 	UX_PRC_DEV_VALUE=""
 	FPT_CELL_COLOR="transparent"
@@ -295,6 +301,7 @@ do
 	if (( $(bc <<< "${j} < 10") == 1 )); then
 		FPT_ROW_VALUE=`xmllint --xpath "//tbody/tr[$j]/td[2]/text()" --html $OUTPUT_FILE`
 		UX_ROW_VALUE=`xmllint --xpath "//tbody/tr[$j]/td[3]/text()" --html $OUTPUT_FILE`
+		ADS_ROW_VALUE=`xmllint --xpath "//tbody/tr[$j]/td[21]/text()" --html $OUTPUT_FILE`
 	elif (( $(bc <<< "${j} > 9") == 1 && $(bc <<< "${j} < 13") == 1 )); then
 		case "$j" in
 			10)
@@ -360,74 +367,80 @@ do
 		fi 
 	fi
 
+	if [ "$ADS_ROW_VALUE" != "n/a" ]; then
+		if [ "$ADS_ROW_VALUE" == "0.0" ]; then
+			ADS_ROW_VALUE=""
+		fi
+	fi
+
 	case "$j" in
 		1)
 		#Event Page
 		SPEED_INDEX_MODIFIER=0.25
-		REPORT_ROW1="${REPORT_ROW1}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td>"
+		REPORT_ROW1="${REPORT_ROW1}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td><td align='right'>${ADS_ROW_VALUE}</td>"
 		;;
 		2)
 		#Home Page
 		SPEED_INDEX_MODIFIER=0.1
-		REPORT_ROW2="${REPORT_ROW2}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td>"
+		REPORT_ROW2="${REPORT_ROW2}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td><td align='right'>${ADS_ROW_VALUE}</td>"
 		;;
 		3)
 		#Search Page
 		SPEED_INDEX_MODIFIER=0.1
-		REPORT_ROW3="${REPORT_ROW3}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td>"
+		REPORT_ROW3="${REPORT_ROW3}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td><td align='right'>${ADS_ROW_VALUE}</td>"
 		;;
 		4)
 		#Team Page
 		SPEED_INDEX_MODIFIER=0.05
-		REPORT_ROW4="${REPORT_ROW4}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td>"
+		REPORT_ROW4="${REPORT_ROW4}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td><td align='right'>${ADS_ROW_VALUE}</td>"
 		;;
 		5)
 		#Artist Page
 		SPEED_INDEX_MODIFIER=0.05
-		REPORT_ROW5="${REPORT_ROW5}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td>"
+		REPORT_ROW5="${REPORT_ROW5}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td><td align='right'>${ADS_ROW_VALUE}</td>"
 		;;
 		6)
 		#Venue Page
 		SPEED_INDEX_MODIFIER=0.05
-		REPORT_ROW6="${REPORT_ROW6}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td>"
+		REPORT_ROW6="${REPORT_ROW6}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td><td align='right'>${ADS_ROW_VALUE}</td>"
 		;;
 		7)
 		#XO Landing Page
 		SPEED_INDEX_MODIFIER=0.2
-		REPORT_ROW7="${REPORT_ROW7}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td>"
+		REPORT_ROW7="${REPORT_ROW7}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td><td align='right'>${ADS_ROW_VALUE}</td>"
 		;;
 		8)
 		#Cat Page
-		REPORT_ROW8="${REPORT_ROW8}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td>"
+		REPORT_ROW8="${REPORT_ROW8}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td><td align='right'>${ADS_ROW_VALUE}</td>"
 		;;
 		9)
 		#Gropup Page
-		REPORT_ROW9="${REPORT_ROW9}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td>"
+		REPORT_ROW9="${REPORT_ROW9}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td><td align='right'>${ADS_ROW_VALUE}</td>"
 		;;
 		10)
 		#UK Home Page
 		SPEED_INDEX_MODIFIER=0.15
-		REPORT_ROW10="${REPORT_ROW10}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td>"
+		REPORT_ROW10="${REPORT_ROW10}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td><td align='right'>${ADS_ROW_VALUE}</td>"
 		;;
 		11)
 		#UK Search Page
 		SPEED_INDEX_MODIFIER=0.15
-		REPORT_ROW11="${REPORT_ROW11}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td>"
+		REPORT_ROW11="${REPORT_ROW11}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td><td align='right'>${ADS_ROW_VALUE}</td>"
 		;;
 		12)
 		#UK Event Page
 		SPEED_INDEX_MODIFIER=0.40
-		REPORT_ROW12="${REPORT_ROW12}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td>"
+		REPORT_ROW12="${REPORT_ROW12}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td><td align='right'>${ADS_ROW_VALUE}</td>"
 		;;
 		13)
 		#UK Event Page
 		SPEED_INDEX_MODIFIER=0.20
-		REPORT_ROW13="${REPORT_ROW13}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td>"
+		REPORT_ROW13="${REPORT_ROW13}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td><td align='right'>${ADS_ROW_VALUE}</td>"
 		;;
 		14)
 		#UK Event Page
 		SPEED_INDEX_MODIFIER=0.30
-		REPORT_ROW14="${REPORT_ROW14}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td>"
+		REPORT_ROW14="${REPORT_ROW14}<td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_ROW_VALUE}</td><td style='background-color: ${FPT_CELL_COLOR}' align='right'>${FPT_PRC_DEV_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_ROW_VALUE}</td><td style='background-color: ${UX_CELL_COLOR}' align='right'>${UX_PRC_DEV_VALUE}</td><td align='right'>${ADS_ROW_VALUE}</td>"
 		;;
 	esac
 	if (( $(bc <<< "${j} < 8") == 1 )); then
@@ -491,7 +504,7 @@ function beginTable {
 }
 
 function finalizeReport {
-    echo "</tbody></table></div><div><p>* UK mWeb times supplied by Keynote - non-UX Time</p></div><div><p>** Sumbit Order API times supplied by Splunk</p></div><div><table><tr><td style='font-weight: bold'>Color Codes:</td><td style='background-color: #3CB371'>GREEN > 99% of Goal</td><td style='background-color: #FFFF00'>YELLOW 90% - 99% of Goal</td><td style='background-color: #FF6347'>RED < 90% of Goal</td></tr></table></div><div><p>For more information and a breakout by region visit: <a href='http://slcv024.stubcorp.com:5000/results/dashboard'>HARStorage Dashboard</a></p></div></body></html>" >> $DAILY_REPORT
+    echo "</tbody></table></div><div><p>* UK mWeb times supplied by Keynote - non-UX Time</p></div><div><p>** Sumbit Order API times supplied by Splunk</p></div><div><p>*** Ads Time is the total time from when the Ads are initialized till the last Ad finishes displaying.</p></div><div><table><tr><td style='font-weight: bold'>Color Codes:</td><td style='background-color: #3CB371'>GREEN > 99% of Goal</td><td style='background-color: #FFFF00'>YELLOW 90% - 99% of Goal</td><td style='background-color: #FF6347'>RED < 90% of Goal</td></tr></table></div><div><p>For more information and a breakout by region visit: <a href='http://slcv024.stubcorp.com:5000/results/dashboard'>HARStorage Dashboard</a></p></div></body></html>" >> $DAILY_REPORT
 }
 
 function populateSummaryRow {
@@ -568,22 +581,22 @@ function cleanup {
 
 function populateLabelsAndGoals {
 	#Define actual report names
-	REPORT_ROW1="<tr><td style='overflow: hidden; white-space: nowrap;'>Event Page</td><td colspan='2' align='right'>$(getGoal 1 FPT)</td><td colspan='2' align='right'>$(getGoal 1 UX)</td>"
-	REPORT_ROW2="<tr><td style='overflow: hidden; white-space: nowrap;'>Explore Home Page</td><td colspan='2' align='right'>$(getGoal 2 FPT)</td><td colspan='2' align='right'>$(getGoal 2 UX)</td>"
-	REPORT_ROW3="<tr><td style='overflow: hidden; white-space: nowrap;'>Search Results Page</td><td colspan='2' align='right'>$(getGoal 3 FPT)</td><td colspan='2' align='right'>$(getGoal 3 UX)</td>"
-	REPORT_ROW4="<tr><td style='overflow: hidden; white-space: nowrap;'>Team Page</td><td colspan='2' align='right'>$(getGoal 4 FPT)</td><td colspan='2' align='right'>$(getGoal 4 UX)</td>"
-	REPORT_ROW5="<tr><td style='overflow: hidden; white-space: nowrap;'>Artist Page</td><td colspan='2' align='right'>$(getGoal 5 FPT)</td><td colspan='2' align='right'>$(getGoal 5 UX)</td>"
-	REPORT_ROW6="<tr><td style='overflow: hidden; white-space: nowrap;'>Venue Page</td><td colspan='2' align='right'>$(getGoal 6 FPT)</td><td colspan='2' align='right'>$(getGoal 6 UX)</td>"
-	REPORT_ROW7="<tr><td style='overflow: hidden; white-space: nowrap;'>XO Landing Page</td><td colspan='2' align='right'>$(getGoal 7 FPT)</td><td colspan='2' align='right'>$(getGoal 7 UX)</td>"
-	REPORT_ROW8="<tr><td style='overflow: hidden; white-space: nowrap;'>Category Page</td><td colspan='2' align='right'>$(getGoal 8 FPT)</td><td colspan='2' align='right'>$(getGoal 8 UX)</td>"
-	REPORT_ROW9="<tr><td style='overflow: hidden; white-space: nowrap;'>Grouping Page</td><td colspan='2' align='right'>$(getGoal 9 FPT)</td><td colspan='2' align='right'>$(getGoal 9 UX)</td>"	
-	REPORT_ROW10="<tr><td style='overflow: hidden; white-space: nowrap;'>UK mWeb Home<b>*</b></td><td colspan='2' align='right'>$(getGoal 10 FPT)</td><td colspan='2' align='right'>$(getGoal 10 UX)</td>"	
-	REPORT_ROW11="<tr><td style='overflow: hidden; white-space: nowrap;'>UK mWeb Search<b>*</b></td><td colspan='2' align='right'>$(getGoal 11 FPT)</td><td colspan='2' align='right'>$(getGoal 11 UX)</td>"	
-	REPORT_ROW12="<tr><td style='overflow: hidden; white-space: nowrap;'>UK mWeb Event<b>*</b></td><td colspan='2' align='right'>$(getGoal 12 FPT)</td><td colspan='2' align='right'>$(getGoal 12 UX)</td>"	
-	REPORT_ROW13="<tr><td style='overflow: hidden; white-space: nowrap;'>US Submit Order API<b>**</b></td><td colspan='2' align='right'>$(getGoal 13 FPT)</td><td colspan='2' align='right'>$(getGoal 13 UX)</td>"	
-	REPORT_ROW14="<tr><td style='overflow: hidden; white-space: nowrap;'>UK Submit Order API<b>**</b></td><td colspan='2' align='right'>$(getGoal 14 FPT)</td><td colspan='2' align='right'>$(getGoal 14 UX)</td>"	
+	REPORT_ROW1="<tr><td style='overflow: hidden; white-space: nowrap;'>Event Page</td><td colspan='2' align='right'>$(getGoal 1 FPT)</td><td colspan='2' align='right'>$(getGoal 1 UX)</td><td colspan='1' align='right'>$(getGoal 1 Ads)</td>"
+	REPORT_ROW2="<tr><td style='overflow: hidden; white-space: nowrap;'>Explore Home Page</td><td colspan='2' align='right'>$(getGoal 2 FPT)</td><td colspan='2' align='right'>$(getGoal 2 UX)</td><td colspan='1' align='right'>$(getGoal 2 Ads)</td>"
+	REPORT_ROW3="<tr><td style='overflow: hidden; white-space: nowrap;'>Search Results Page</td><td colspan='2' align='right'>$(getGoal 3 FPT)</td><td colspan='2' align='right'>$(getGoal 3 UX)</td><td colspan='1' align='right'>$(getGoal 3 Ads)</td>"
+	REPORT_ROW4="<tr><td style='overflow: hidden; white-space: nowrap;'>Team Page</td><td colspan='2' align='right'>$(getGoal 4 FPT)</td><td colspan='2' align='right'>$(getGoal 4 UX)</td><td colspan='1' align='right'>$(getGoal 4 Ads)</td>"
+	REPORT_ROW5="<tr><td style='overflow: hidden; white-space: nowrap;'>Artist Page</td><td colspan='2' align='right'>$(getGoal 5 FPT)</td><td colspan='2' align='right'>$(getGoal 5 UX)</td><td colspan='1' align='right'>$(getGoal 5 Ads)</td>"
+	REPORT_ROW6="<tr><td style='overflow: hidden; white-space: nowrap;'>Venue Page</td><td colspan='2' align='right'>$(getGoal 6 FPT)</td><td colspan='2' align='right'>$(getGoal 6 UX)</td><td colspan='1' align='right'>$(getGoal 6 Ads)</td>"
+	REPORT_ROW7="<tr><td style='overflow: hidden; white-space: nowrap;'>XO Landing Page</td><td colspan='2' align='right'>$(getGoal 7 FPT)</td><td colspan='2' align='right'>$(getGoal 7 UX)</td><td colspan='1' align='right'>$(getGoal 7 Ads)</td>"
+	REPORT_ROW8="<tr><td style='overflow: hidden; white-space: nowrap;'>Category Page</td><td colspan='2' align='right'>$(getGoal 8 FPT)</td><td colspan='2' align='right'>$(getGoal 8 UX)</td><td colspan='1' align='right'>$(getGoal 8 Ads)</td>"
+	REPORT_ROW9="<tr><td style='overflow: hidden; white-space: nowrap;'>Grouping Page</td><td colspan='2' align='right'>$(getGoal 9 FPT)</td><td colspan='2' align='right'>$(getGoal 9 UX)</td><td colspan='1' align='right'>$(getGoal 9 Ads)</td>"	
+	REPORT_ROW10="<tr><td style='overflow: hidden; white-space: nowrap;'>UK mWeb Home<b>*</b></td><td colspan='2' align='right'>$(getGoal 10 FPT)</td><td colspan='2' align='right'>$(getGoal 10 UX)</td><td colspan='1' align='right'>$(getGoal 10 Ads)</td>"	
+	REPORT_ROW11="<tr><td style='overflow: hidden; white-space: nowrap;'>UK mWeb Search<b>*</b></td><td colspan='2' align='right'>$(getGoal 11 FPT)</td><td colspan='2' align='right'>$(getGoal 11 UX)</td><td colspan='1' align='right'>$(getGoal 11 Ads)</td>"	
+	REPORT_ROW12="<tr><td style='overflow: hidden; white-space: nowrap;'>UK mWeb Event<b>*</b></td><td colspan='2' align='right'>$(getGoal 12 FPT)</td><td colspan='2' align='right'>$(getGoal 12 UX)</td><td colspan='1' align='right'>$(getGoal 12 Ads)</td>"	
+	REPORT_ROW13="<tr><td style='overflow: hidden; white-space: nowrap;'>US Submit Order API<b>**</b></td><td colspan='2' align='right'>$(getGoal 13 FPT)</td><td colspan='2' align='right'>$(getGoal 13 UX)</td><td colspan='1' align='right'>$(getGoal 13 Ads)</td>"	
+	REPORT_ROW14="<tr><td style='overflow: hidden; white-space: nowrap;'>UK Submit Order API<b>**</b></td><td colspan='2' align='right'>$(getGoal 14 FPT)</td><td colspan='2' align='right'>$(getGoal 14 UX)</td><td colspan='1' align='right'>$(getGoal 14 Ads)</td>"	
 	
-	SITE_SPEED_INDEX_ROW="<tr><td style='font-weight: bold'>Site Speed Index</td><td colspan='2' align='right'>$(getGoal 0 FPT)</td><td colspan='2' align='right'>$(getGoal 0 UX)</td>"	
+	SITE_SPEED_INDEX_ROW="<tr><td style='font-weight: bold'>Site Speed Index</td><td colspan='2' align='right'>$(getGoal 0 FPT)</td><td colspan='2' align='right'>$(getGoal 0 UX)</td><td colspan='1' align='right'>$(getGoal 0 Ads)</td>"	
 }
 
 HARSTORAGE_FS_LOCATION="/opt/harstorage-1.0/harstorage/templates"
@@ -600,10 +613,10 @@ if [[ "${GNERATE_REPORT}" == "true" ]]; then
 	DATES=(1 2 3 4 5 6 7 15 30)
 	#DATES=(15)
 
-	DATES_ROW="<th  width='340px'></th><th colspan='4'></th>"
-	HEADER_ROW="<th colspan='1' width='340px' class='left'></th><th colspan='4'>GOALS</th>"
+	DATES_ROW="<th  width='340px'></th><th colspan='5'></th>"
+	HEADER_ROW="<th colspan='1' width='340px' class='left'></th><th colspan='5'>GOALS</th>"
 	TIME_LABEL_ROW=""
-	DEVIATION_LABEL_ROW="<th width='340px' class='left'>Label</th><th class='center' colspan='2'>Full Load Time (s)</th><th class='center' colspan='2'>User Ready Time (s)</th>"
+	DEVIATION_LABEL_ROW="<th width='340px' class='left'>Label</th><th class='center' colspan='2'>Full Load Time (s)</th><th class='center' colspan='2'>User Ready Time (s)</th><th class='center' colspan='1'>Ads Time (s)</th>"
 
 	DAILY_REPORT="dailyReport_`date +%Y-%m-%d`.html"
 
@@ -630,8 +643,8 @@ if [[ "${GNERATE_REPORT}" == "true" ]]; then
 			#DATE_LABEL=`date -v-${END_DAYS_BACK}d +%Y-%m-%d`
 			DATE_LABEL=`date -d "${END_DAYS_BACK} days ago" +%Y-%m-%d`
 		fi
-		TIME_LABEL_ROW="${TIME_LABEL_ROW}<th colspan='2' class='center'>Full Load Time (s)</th><th colspan='2' class='center'>User Ready Time (s)</th>"
-		DEVIATION_LABEL_ROW="${DEVIATION_LABEL_ROW}<th class='center'>Actual</th><th class='center'>% of Goal</th><th class='center'>Actual</th><th class='center'>% of Goal</th>"
+		TIME_LABEL_ROW="${TIME_LABEL_ROW}<th colspan='2' class='center'>Full Load Time (s)</th><th colspan='2' class='center'>User Ready Time (s)</th><th colspan='1' class='center'>Ads Time (s)</th>"
+		DEVIATION_LABEL_ROW="${DEVIATION_LABEL_ROW}<th class='center'>Actual</th><th class='center'>% of Goal</th><th class='center'>Actual</th><th class='center'>% of Goal</th><th class='center'>Actual</th>"
 
 		START_DATE=`date -d "${START_DAYS_BACK} days ago" +%Y-%m-%d+00:00:00`	
 		END_DATE=`date -d "${END_DAYS_BACK} days ago" +%Y-%m-%d+00:00:00`
