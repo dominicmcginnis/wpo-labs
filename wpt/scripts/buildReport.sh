@@ -504,7 +504,7 @@ function beginTable {
 }
 
 function finalizeReport {
-    echo "</tbody></table></div><div><p>* UK mWeb times supplied by Keynote - non-UX Time</p></div><div><p>** Sumbit Order API times supplied by Splunk</p></div><div><p>*** Ads Time is the total time from when the Ads are initialized till the last Ad finishes displaying.</p></div><div><table><tr><td style='font-weight: bold'>Color Codes:</td><td style='background-color: #3CB371'>GREEN > 99% of Goal</td><td style='background-color: #FFFF00'>YELLOW 90% - 99% of Goal</td><td style='background-color: #FF6347'>RED < 90% of Goal</td></tr></table></div><div><p>For more information and a breakout by region visit: <a href='http://slcv024.stubcorp.com:5000/results/dashboard'>HARStorage Dashboard</a></p></div></body></html>" >> $DAILY_REPORT
+    echo "</tbody></table></div><div><p>* UK mWeb times supplied by Keynote - non-UX Time</p></div><div><p>** Sumbit Order API times supplied by Splunk</p></div><div><p>*** Ads Time is the total time from when the Ads are initialized till the last Ad finishes displaying.</p></div><div><table><tr><td style='font-weight: bold'>Color Codes:</td><td style='background-color: #3CB371'>GREEN &gt; 99% of Goal</td><td style='background-color: #FFFF00'>YELLOW 90% - 99% of Goal</td><td style='background-color: #FF6347'>RED &lt; 90% of Goal</td></tr></table></div><div><p>For more information and a breakout by region visit: <a href='http://slcv024.stubcorp.com:5000/results/dashboard'>HARStorage Dashboard</a></p></div></body></html>" >> $DAILY_REPORT
 }
 
 function populateSummaryRow {
@@ -613,10 +613,10 @@ if [[ "${GNERATE_REPORT}" == "true" ]]; then
 	DATES=(1 2 3 4 5 6 7 15 30)
 	#DATES=(15)
 
-	DATES_ROW="<th  width='340px'></th><th colspan='5'></th>"
+	DATES_ROW="<th colspan='1' width='340px'></th><th colspan='5'></th>"
 	HEADER_ROW="<th colspan='1' width='340px' class='left'></th><th colspan='5'>GOALS</th>"
 	TIME_LABEL_ROW=""
-	DEVIATION_LABEL_ROW="<th width='340px' class='left'>Label</th><th class='center' colspan='2'>Full Load Time (s)</th><th class='center' colspan='2'>User Ready Time (s)</th><th class='center' colspan='1'>Ads Time (s)</th>"
+	DEVIATION_LABEL_ROW="<th colspan='1' width='340px' class='left'>Label</th><th class='center' colspan='2'>Full Load Time (s)</th><th class='center' colspan='2'>User Ready Time (s)</th><th class='center' colspan='1'>Ads Time (s)</th>"
 
 	DAILY_REPORT="dailyReport_`date +%Y-%m-%d`.html"
 
@@ -625,7 +625,7 @@ if [[ "${GNERATE_REPORT}" == "true" ]]; then
 	echo "<html><head><style>table{border-collapse:collapse;border:1px solid #FF0000;}table th { background-color: #D3D3D3; border:1px solid #FF0000; }table td{border:1px solid #FF0000;}</style></head><body>${REPORT_SUBJECT}<br />" > $DAILY_REPORT
 
 	DATES_LEN="$(bc <<< "(${#DATES[@]}*4)+5")"
-	BREAK_ROW="<tr style='background-color: #D3D3D3;'><td colspan='${DATES_LEN}''></td></tr>"
+	BREAK_ROW="<tr style='background-color: #D3D3D3;'><td colspan='${DATES_LEN}'></td></tr>"
 
 	#Run Reports
 	for i in "${DATES[@]}"; 
@@ -644,7 +644,7 @@ if [[ "${GNERATE_REPORT}" == "true" ]]; then
 			DATE_LABEL=`date -d "${END_DAYS_BACK} days ago" +%Y-%m-%d`
 		fi
 		TIME_LABEL_ROW="${TIME_LABEL_ROW}<th colspan='2' class='center'>Full Load Time (s)</th><th colspan='2' class='center'>User Ready Time (s)</th><th colspan='1' class='center'>Ads Time (s)</th>"
-		DEVIATION_LABEL_ROW="${DEVIATION_LABEL_ROW}<th class='center'>Actual</th><th class='center'>% of Goal</th><th class='center'>Actual</th><th class='center'>% of Goal</th><th class='center'>Actual</th>"
+		DEVIATION_LABEL_ROW="${DEVIATION_LABEL_ROW}<th colspan='1' class='center'>Actual</th><th colspan='1' class='center'>% of Goal</th><th colspan='1' class='center'>Actual</th><th colspan='1' class='center'>% of Goal</th><th colspan='1' class='center'>Actual</th>"
 
 		START_DATE=`date -d "${START_DAYS_BACK} days ago" +%Y-%m-%d+00:00:00`	
 		END_DATE=`date -d "${END_DAYS_BACK} days ago" +%Y-%m-%d+00:00:00`
