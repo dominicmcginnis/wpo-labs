@@ -206,6 +206,10 @@ function getData {
 
 	echo "Getting data for: ${START_DATE} - ${END_DATE}"
 
+#EVENT_TEST_PARAMS="step_1_label=unifiedEvent_cable_prod_EAST&"\
+#"step_1_label_hidden=unifiedEvent_cable_prod_EAST&"\
+#"step_1_start_ts=$START_DATE&step_1_end_ts=$END_DATE"
+
 EVENT_TEST_PARAMS="step_1_label=unifiedEvent_cable_prod_SLCD&"\
 "step_1_label=unifiedEvent_cable_prod_EAST&"\
 "step_1_label=unifiedEvent_cable_prod_SF&"\
@@ -275,6 +279,7 @@ URL_PARAMS="$EVENT_TEST_PARAMS&"\
 echo "Running: $REPORT_URL?$URL_PARAMS"
 
 DATES_ROW="${DATES_ROW}<th colspan='5'><a href='$REPORT_URL?$URL_PARAMS'>$DATE_LABEL</a></th>"
+#DATES_ROW="${DATES_ROW}<th colspan='5'>$DATE_LABEL</th>"
 
 curl -s "$REPORT_URL?$URL_PARAMS" > $OUTPUT_FILE
 
@@ -504,7 +509,7 @@ function beginTable {
 }
 
 function finalizeReport {
-    echo "</tbody></table></div><div><p>* UK mWeb times supplied by Keynote - non-UX Time</p></div><div><p>** Sumbit Order API times supplied by Splunk</p></div><div><p>*** Ads Time is the total time from when the Ads are initialized till the last Ad finishes displaying.</p></div><div><table><tr><td style='font-weight: bold'>Color Codes:</td><td style='background-color: #3CB371'>GREEN &gt; 99% of Goal</td><td style='background-color: #FFFF00'>YELLOW 90% - 99% of Goal</td><td style='background-color: #FF6347'>RED &lt; 90% of Goal</td></tr></table></div><div><p>For more information and a breakout by region visit: <a href='http://slcv024.stubcorp.com:5000/results/dashboard'>HARStorage Dashboard</a></p></div></body></html>" >> $DAILY_REPORT
+    echo "</tbody></table></div><div><p>* UK mWeb times supplied by Keynote - non-UX Time</p></div><div><p>** Sumbit Order API times supplied by Splunk</p></div><div><p>*** Ads Time is the total time from when the Ads are initialized till the last Ad finishes displaying.</p></div><div><table><tr><td style='font-weight: bold'>Color Codes:</td><td style='background-color: #3CB371'>GREEN &gt; 99% of Goal</td><td style='background-color: #FFFF00'>YELLOW 90% - 99% of Goal</td><td style='background-color: #FF6347'>RED &lt; 90% of Goal</td></tr></table></div><div id='aggTrendsChart-full' style='padding-bottom: 5px; padding-top: 5px'></div> <div id='aggTrendsChart-user' style='padding-bottom: 5px'></div><div id='aggTrendsChart-ads' style='padding-bottom: 5px'></div><div><p>For more information and a breakout by region visit: <a href='http://slcv024.stubcorp.com:5000/results/dashboard'>HARStorage Dashboard</a></p></div><script type='text/javascript'>var dashboard = new HARSTORAGE.Dashboard();dashboard.getAggregateTrendChart('prod-mWeb', '90th Percentile', 30, 'aggTrendsChart-full', 'full_load_time');dashboard.getAggregateTrendChart('prod-mWeb', '90th Percentile', 30, 'aggTrendsChart-user', 'user_ready_time');dashboard.getAggregateTrendChart('prod-mWeb', '90th Percentile', 30, 'aggTrendsChart-ads', 'ads_full_time');</script></body></html>" >> $DAILY_REPORT
 }
 
 function populateSummaryRow {
@@ -565,10 +570,15 @@ done
 
 function sendReport {
 	EMAIL_SUBJECT="Daily Performance KPI Report"
-	TO_LIST="ooxenham@stubhub.com,kkrishnasamy@stubhub.com,kartchandrasekar@ebay.com,bkalra@stubhub.com,mjasso@stubhub.com,mtanaka@stubhub.com,rmcginnis@stubhub.com,raidun@ebay.com,sveio@stubhub.com,Prapunja.Pokhrel@stubhub.com,zzhou2@ebay.com,bamccoy@stubhub.com,cchi@ebay.com,manilsson@stubhub.com,mboos@stubhub.com,gvasvani@stubhub.com,ldanckwerth@stubhub.com,sewang@paypal.com,sshivakumar@stubhub.com,pavaish@stubhub.com,olemmers@stubhub.com,hetashah@ebay.com,tady@stubhub.com,smalladi@stubhub.com,chro@stubhub.com"
-	##Uncomment for testing	
-	#`/root/email/send_email --subject "${EMAIL_SUBJECT}" --to "rmcginnis@stubhub.com" < ${HARSTORAGE_FS_LOCATION}/dailyReport.html`
-	`/root/email/send_email --subject "${EMAIL_SUBJECT}" --to "${TO_LIST}" < ${HARSTORAGE_FS_LOCATION}/dailyReport.html`
+	TO_LIST="ooxenham@stubhub.com,kkrishnasamy@stubhub.com,kartchandrasekar@ebay.com,bkalra@stubhub.com,mjasso@stubhub.com,mtanaka@stubhub.com,rmcginnis@ebay.com,raidun@ebay.com,sveio@stubhub.com,Prapunja.Pokhrel@stubhub.com,zzhou2@ebay.com,bamccoy@stubhub.com,cchi@ebay.com,manilsson@stubhub.com,mboos@stubhub.com,gvasvani@stubhub.com,ldanckwerth@stubhub.com,sewang@paypal.com,sshivakumar@stubhub.com,pavaish@stubhub.com,olemmers@stubhub.com,hetashah@ebay.com,tady@stubhub.com,smalladi@stubhub.com,chro@stubhub.com"
+	#Cleanup any old reports
+	`rm -f /opt/reports/report.gif`	
+	#convert the new HTML report to an image for email
+	`phantomjs suppliedPageEval.js http://slcv024.stubcorp.com:5000/results/dailyReport report.gif`
+	##Uncomment for testing
+	#`/opt/reports/sendReport --subject "${EMAIL_SUBJECT}" --to "rmcginnis@ebay.com" --message "Please find the performance report attached! Or visit: http://slcv024.stubcorp.com:5000/results/dailyReport to see it." --image "/opt/reports/report.gif"`
+	`/opt/reports/sendReport --subject "${EMAIL_SUBJECT}" --to "${TO_LIST}" --message "Please find the performance report attached! Or visit http://slcv024.stubcorp.com:5000/results/dailyReport to see it." --image "/opt/reports/report.gif"`
+	#`/root/email/send_email --subject "${EMAIL_SUBJECT}" --to "${TO_LIST}" < ${HARSTORAGE_FS_LOCATION}/dailyReport.html`
 }
 
 function copyReportToHarStorage {
@@ -611,7 +621,7 @@ if [[ "${GNERATE_REPORT}" == "true" ]]; then
 	ROWS=(1 2 3 4 5 6 7 8 9 10 11 12 13 14)
 	#Run for the required dates
 	DATES=(1 2 3 4 5 6 7 15 30)
-	#DATES=(15)
+	#DATES=(1 2)
 
 	DATES_ROW="<th colspan='1' width='340px'></th><th colspan='5'></th>"
 	HEADER_ROW="<th colspan='1' width='340px' class='left'></th><th colspan='5'>GOALS</th>"
@@ -622,7 +632,7 @@ if [[ "${GNERATE_REPORT}" == "true" ]]; then
 
 	# Build the begging of the report file
 	REPORT_SUBJECT="<div>The following is the performance aggregate report at the <b>90th Percentile over CABLE (5/1 Mbps 28ms RTT) speeds for `date +%Y-%m-%d+00:00:00`</b>.</div><div>To view this report on the web click here: <a href='http://slcv024.stubcorp.com:5000/results/dailyReport'>Daily Report</a></div>"
-	echo "<html><head><style>table{border-collapse:collapse;border:1px solid #FF0000;}table th { background-color: #D3D3D3; border:1px solid #FF0000; }table td{border:1px solid #FF0000;}</style></head><body>${REPORT_SUBJECT}<br />" > $DAILY_REPORT
+	echo "<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.0 Transitional//EN'><html lang='en'><head><meta http-equiv='Content-Type' content='text/html;charset=utf-8' /><title>Daily Report</title><style type='text/css'> table{border-collapse:collapse;border:1px solid #FF0000;}table th{ background-color: #D3D3D3; border:1px solid #FF0000; } table td{border:1px solid #FF0000;}</style><script type='text/javascript' src='http://slcv024.stubcorp.com:5000/scripts/preferences.js'></script><script type='text/javascript' src='http://slcv024.stubcorp.com:5000/scripts/LAB.min.js'></script><script type='text/javascript' src='http://slcv024.stubcorp.com:5000/scripts/harstorage.js?ver=1.0'></script><script type='text/javascript' src='http://slcv024.stubcorp.com:5000/scripts/jquery-1.7.min.js'></script><script type='text/javascript' src='http://slcv024.stubcorp.com:5000/scripts/highcharts/highcharts.js'></script><script type='text/javascript' src='http://slcv024.stubcorp.com:5000/scripts/highcharts/exporting.js'></script><script type='text/javascript' src='http://slcv024.stubcorp.com:5000/scripts/highcharts/themes.js'></script></head><body>${REPORT_SUBJECT}<br/>" > $DAILY_REPORT
 
 	DATES_LEN="$(bc <<< "(${#DATES[@]}*4)+5")"
 	BREAK_ROW="<tr style='background-color: #D3D3D3;'><td colspan='${DATES_LEN}'></td></tr>"
