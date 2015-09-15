@@ -7,6 +7,7 @@ METRIC=""
 KEYNOTE_API_KEY=""
 SEND_REPORT="false"
 GNERATE_REPORT="true"
+EXCLUDE_LOCATION=""
 
 for arg in "${CL_ARGS[@]}"; do
 	if [[ "$arg" =~ .*--metric=.* ]]; then
@@ -20,6 +21,9 @@ for arg in "${CL_ARGS[@]}"; do
 	fi
 	if [[ "$arg" =~ .*--generateReport=.* ]]; then
 		GNERATE_REPORT="${arg:17}"
+	fi
+	if [[ "$arg" =~ .*--excludeLocation=.* ]]; then
+		EXCLUDE_LOCATION="${arg:18}"
 	fi
 done
 
@@ -201,68 +205,46 @@ function getGoal {
 	esac
 }
 
+#SubRoutine to build the basic URL we are executing against
+#Example of usage: $(buildUrlParams unifiedEvent_cable_prod step_1)
+#Will return the URL string for the specified test in entirety
+function buildUrlParams {
+	LABEL_NAME_PREFIX="$1"
+	STEP="$2"
+	STEP_LABEL=""
+	HIDDEN="${STEP}_label_hidden="
+	if [ "$EXCLUDE_LOCATION" != "EAST" ]; then
+		STEP_LABEL="${STEP_LABEL}${STEP}_label=${LABEL_NAME_PREFIX}_EAST&"
+		HIDDEN="${HIDDEN}${LABEL_NAME_PREFIX}_EAST%2C"
+	fi
+	if [ "$EXCLUDE_LOCATION" != "SF" ]; then
+		STEP_LABEL="${STEP_LABEL}${STEP}_label=${LABEL_NAME_PREFIX}_SF&"
+		HIDDEN="${HIDDEN}${LABEL_NAME_PREFIX}_SF%2C"
+	fi
+	if [ "$EXCLUDE_LOCATION" != "SLCD" ]; then
+		STEP_LABEL="${STEP_LABEL}${STEP}_label=${LABEL_NAME_PREFIX}_SLCD&"
+		HIDDEN="${HIDDEN}${LABEL_NAME_PREFIX}_SLCD&"
+	fi
+	#Add Dates
+	STEP_DATES="${STEP}_start_ts=${START_DATE}&${STEP}_end_ts=${END_DATE}"
+
+	echo "${STEP_LABEL}${HIDDEN}{$STEP_DATES}"
+}
 #SubRoutine to get the files and populate the reports 
 function getData {
 
 	echo "Getting data for: ${START_DATE} - ${END_DATE}"
 
-#EVENT_TEST_PARAMS="step_1_label=unifiedEvent_cable_prod_EAST&"\
-#"step_1_label_hidden=unifiedEvent_cable_prod_EAST&"\
-#"step_1_start_ts=$START_DATE&step_1_end_ts=$END_DATE"
+EVENT_TEST_PARAMS="$(buildUrlParams unifiedEvent_cable_prod step_1)"
+NEW_HP_TEST_PARAMS="$(buildUrlParams unifiedCardsHP_cable_prod step_2)"
+SEARCH_TEST_PARAMS="$(buildUrlParams unifiedSearchResults_cable_prod step_3)"
+TEAM_TEST_PARAMS="$(buildUrlParams unifiedTeam_cable_prod step_4)"
+ARTIST_TEST_PARAMS="$(buildUrlParams unifiedArtist_cable_prod step_5)"
+VENUE_TEST_PARAMS="$(buildUrlParams unifiedVenue_cable_prod step_6)"
+XO_LANDING_TEST_PARAMS="$(buildUrlParams xo_newxo_cable_prod step_7)"
+CATEGORY_TEST_PARAMS="$(buildUrlParams unifiedCategory_cable_prod step_8)"
+GROUPING_TEST_PARAMS="$(buildUrlParams unifiedGrouping_cable_prod step_9)"
 
-EVENT_TEST_PARAMS="step_1_label=unifiedEvent_cable_prod_SLCD&"\
-"step_1_label=unifiedEvent_cable_prod_EAST&"\
-"step_1_label=unifiedEvent_cable_prod_SF&"\
-"step_1_label_hidden=unifiedEvent_cable_prod_SLCD%2CunifiedEvent_cable_prod_EAST%2CunifiedEvent_cable_prod_SF&"\
-"step_1_start_ts=$START_DATE&step_1_end_ts=$END_DATE"
-
-NEW_HP_TEST_PARAMS="step_2_label=unifiedCardsHP_cable_prod_SLCD&"\
-"step_2_label=unifiedCardsHP_cable_prod_EAST&"\
-"step_2_label=unifiedCardsHP_cable_prod_SF&"\
-"step_2_label_hidden=unifiedCardsHP_cable_prod_SLCD%2CunifiedCardsHP_cable_prod_EAST%2CunifiedCardsHP_cable_prod_SF&"\
-"step_2_start_ts=$START_DATE&step_2_end_ts=$END_DATE"
-
-SEARCH_TEST_PARAMS="step_3_label=unifiedSearchResults_cable_prod_SLCD&"\
-"step_3_label=unifiedSearchResults_cable_prod_EAST&"\
-"step_3_label=unifiedSearchResults_cable_prod_SF&"\
-"step_3_label_hidden=unifiedSearchResults_cable_prod_SLCD%2CunifiedSearchResults_cable_prod_EAST%2CunifiedSearchResults_cable_prod_SF&"\
-"step_3_start_ts=$START_DATE&step_3_end_ts=$END_DATE"
-
-TEAM_TEST_PARAMS="step_4_label=unifiedTeam_cable_prod_SLCD&"\
-"step_4_label=unifiedTeam_cable_prod_EAST&"\
-"step_4_label=unifiedTeam_cable_prod_SF&"\
-"step_4_label_hidden=unifiedTeam_cable_prod_SLCD%2CunifiedTeam_cable_prod_EAST%2CunifiedTeam_cable_prod_SF&"\
-"step_4_start_ts=$START_DATE&step_4_end_ts=$END_DATE"
-
-ARTIST_TEST_PARAMS="step_5_label=unifiedArtist_cable_prod_SLCD&"\
-"step_5_label=unifiedArtist_cable_prod_EAST&"\
-"step_5_label=unifiedArtist_cable_prod_SF&"\
-"step_5_label_hidden=unifiedArtist_cable_prod_SLCD%2CunifiedArtist_cable_prod_EAST%2CunifiedArtist_cable_prod_SF&"\
-"step_5_start_ts=$START_DATE&step_5_end_ts=$END_DATE"
-
-VENUE_TEST_PARAMS="step_6_label=unifiedVenue_cable_prod_SLCD&"\
-"step_6_label=unifiedVenue_cable_prod_EAST&"\
-"step_6_label=unifiedVenue_cable_prod_SF&"\
-"step_6_label_hidden=unifiedVenue_cable_prod_SLCD%2CunifiedVenue_cable_prod_EAST%2CunifiedVenue_cable_prod_SF&"\
-"step_6_start_ts=$START_DATE&step_6_end_ts=$END_DATE"
-
-XO_LANDING_TEST_PARAMS="step_7_label=xo_newxo_cable_prod_SLCD&"\
-"step_7_label=xo_newxo_cable_prod_EAST&"\
-"step_7_label=xo_newxo_cable_prod_SF&"\
-"step_7_label_hidden=xo_newxo_cable_prod_SLCD%2Cxo_newxo_cable_prod_EAST%2Cxo_newxo_cable_prod_SF&"\
-"step_7_start_ts=$START_DATE&step_7_end_ts=$END_DATE"
-
-CATEGORY_TEST_PARAMS="step_8_label=unifiedCategory_cable_prod_SLCD&"\
-"step_8_label=unifiedCategory_cable_prod_EAST&"\
-"step_8_label=unifiedCategory_cable_prod_SF&"\
-"step_8_label_hidden=unifiedCategory_cable_prod_SLCD%2CunifiedCategory_cable_prod_EAST%2CunifiedCategory_cable_prod_SF&"\
-"step_8_start_ts=$START_DATE&step_8_end_ts=$END_DATE"
-
-GROUPING_TEST_PARAMS="step_9_label=unifiedGrouping_cable_prod_SLCD&"\
-"step_9_label=unifiedGrouping_cable_prod_EAST&"\
-"step_9_label=unifiedGrouping_cable_prod_SF&"\
-"step_9_label_hidden=unifiedGrouping_cable_prod_SLCD%2CunifiedGrouping_cable_prod_EAST%2CunifiedGrouping_cable_prod_SF&"\
-"step_9_start_ts=$START_DATE&step_9_end_ts=$END_DATE"
 
 URL_PARAMS="$EVENT_TEST_PARAMS&"\
 "$NEW_HP_TEST_PARAMS&"\
